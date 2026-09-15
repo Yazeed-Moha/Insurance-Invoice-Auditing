@@ -57,6 +57,7 @@ Validated contract extractions are reused only when the contract, model, prompt,
 
 - `submission.csv` — combined Hospital 2 and Hospital 3 submission.
 - `hospital_2_submission.csv` and `hospital_3_submission.csv` — the same predictions separated by hospital.
+- `ASSESSMENT_WRITEUP.pdf` — two-page summary of measurement, uncertainty, and next steps.
 - `artifacts/hospital_N_predictions.csv` — predictions for one hospital.
 - `artifacts/audit_details/hospital_N.json` — service matches, applied rules, calculations, and uncertainty.
 - `artifacts/contracts/hospital_N.json` — normalized contract rules.
