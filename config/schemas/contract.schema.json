@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "contract.schema.json",
+  "title": "Canonical Hospital Contract",
+  "type": "object",
+  "required": ["schema_version", "hospital_id", "metadata", "services", "rules", "calculation_order", "extraction"],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "hospital_id": {"type": "string"},
+    "metadata": {
+      "type": "object",
+      "required": ["contract_number", "effective_from", "effective_to", "currency", "rounding"],
+      "properties": {
+        "contract_number": {"type": ["string", "null"]},
+        "provider": {"type": ["string", "null"]},
+        "payer": {"type": ["string", "null"]},
+        "effective_from": {"type": ["string", "null"], "format": "date"},
+        "effective_to": {"type": ["string", "null"], "format": "date"},
+        "currency": {"type": "string"},
+        "rounding": {"const": "half_up_cent"}
+      }
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["service_id", "name", "unit", "rates", "daily_cap"],
+        "properties": {
+          "service_id": {"type": "string"},
+          "name": {"type": "string"},
+          "aliases": {"type": "array", "items": {"type": "string"}},
+          "unit": {"enum": ["per_visit", "per_procedure", "per_hour", "per_day", "per_item", "per_night", "per_test", "per_unit_dispensed", "per_hour_per_item"]},
+          "daily_cap": {"type": ["integer", "null"], "minimum": 0},
+          "rates": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["effective_from", "effective_to", "rate_cents"],
+              "properties": {
+                "effective_from": {"type": ["string", "null"], "format": "date"},
+                "effective_to": {"type": ["string", "null"], "format": "date"},
+                "rate_cents": {"type": "integer", "minimum": 0}
+              }
+            }
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "required": ["threshold_premiums", "weekend_uplifts", "volume_discounts", "daily_caps", "bundles", "exclusions", "facility_multipliers", "plan_multipliers"],
+      "properties": {
+        "daily_caps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["service", "limit"],
+            "properties": {
+              "service": {"type": "string"},
+              "limit": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    },
+    "calculation_order": {
+      "type": "array",
+      "items": {"enum": ["bundle", "facility_multiplier", "plan_multiplier", "premium", "volume_discount"]},
+      "uniqueItems": true
+    },
+    "extraction": {
+      "type": "object",
+      "required": ["method", "source_files", "confidence", "warnings"]
+    }
+  }
+}

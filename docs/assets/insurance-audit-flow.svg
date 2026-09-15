@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">Insurance invoice audit flow</title>
+  <desc id="desc">A contract is extracted by an LLM and validated by Python. Invoice line items are matched to the validated rules, audited deterministically, and written as predictions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#334155"/></marker>
+    <style>
+      .title { font: 700 30px Inter, Arial, sans-serif; fill: #0f172a; }
+      .lane { font: 700 14px Inter, Arial, sans-serif; letter-spacing: 1px; fill: #64748b; }
+      .heading { font: 700 17px Inter, Arial, sans-serif; fill: #0f172a; }
+      .body { font: 400 13px Inter, Arial, sans-serif; fill: #475569; }
+      .arrow { fill: none; stroke: #334155; stroke-width: 2.5; marker-end: url(#arrow); }
+      .input { fill: #eff6ff; stroke: #2563eb; }
+      .llm { fill: #f5f3ff; stroke: #7c3aed; }
+      .python { fill: #ecfdf5; stroke: #059669; }
+      .output { fill: #eef2ff; stroke: #4f46e5; }
+      .box { stroke-width: 2; rx: 14; }
+    </style>
+  </defs>
+  <rect width="1400" height="560" fill="#ffffff"/>
+  <text class="title" x="45" y="48">Insurance invoice audit flow</text>
+
+  <text class="lane" x="45" y="92">1 · BUILD VALIDATED CONTRACT RULES</text>
+  <line x1="45" y1="104" x2="1355" y2="104" stroke="#cbd5e1"/>
+  <rect class="box input" x="45" y="130" width="230" height="100"/>
+  <text class="heading" x="160" y="167" text-anchor="middle">Contract files</text>
+  <text class="body" x="160" y="194" text-anchor="middle">Markdown documents</text>
+  <rect class="box llm" x="355" y="130" width="230" height="100"/>
+  <text class="heading" x="470" y="164" text-anchor="middle">LLM extracts rules</text>
+  <text class="body" x="470" y="190" text-anchor="middle">Services · rates · conditions</text>
+  <text class="body" x="470" y="210" text-anchor="middle">with source evidence</text>
+  <rect class="box python" x="665" y="120" width="260" height="120"/>
+  <text class="heading" x="795" y="156" text-anchor="middle">Python validates</text>
+  <text class="body" x="795" y="182" text-anchor="middle">Schema · evidence · references</text>
+  <text class="body" x="795" y="202" text-anchor="middle">Invalid → retry or stop</text>
+  <rect class="box python" x="1005" y="130" width="260" height="100"/>
+  <text class="heading" x="1135" y="167" text-anchor="middle">Validated rule set</text>
+  <text class="body" x="1135" y="194" text-anchor="middle">Saved and safely reusable</text>
+  <path class="arrow" d="M275 180 H355"/><path class="arrow" d="M585 180 H665"/><path class="arrow" d="M925 180 H1005"/>
+
+  <text class="lane" x="45" y="310">2 · AUDIT INVOICES</text>
+  <line x1="45" y1="322" x2="1355" y2="322" stroke="#cbd5e1"/>
+  <rect class="box input" x="45" y="350" width="230" height="110"/>
+  <text class="heading" x="160" y="389" text-anchor="middle">Invoice files</text>
+  <text class="body" x="160" y="416" text-anchor="middle">Invoices + line items</text>
+  <rect class="box python" x="355" y="350" width="230" height="110"/>
+  <text class="heading" x="470" y="386" text-anchor="middle">Match services</text>
+  <text class="body" x="470" y="412" text-anchor="middle">Description → contract service</text>
+  <text class="body" x="470" y="432" text-anchor="middle">Record confidence</text>
+  <rect class="box python" x="665" y="340" width="260" height="130"/>
+  <text class="heading" x="795" y="379" text-anchor="middle">Calculate and check</text>
+  <text class="body" x="795" y="405" text-anchor="middle">Pricing · arithmetic · bundles</text>
+  <text class="body" x="795" y="425" text-anchor="middle">Duplicates · caps · history</text>
+  <rect class="box output" x="1005" y="340" width="260" height="130"/>
+  <text class="heading" x="1135" y="377" text-anchor="middle">Prediction output</text>
+  <text class="body" x="1135" y="403" text-anchor="middle">Flag · category · expected total</text>
+  <text class="body" x="1135" y="423" text-anchor="middle">Billed total · confidence</text>
+  <text class="body" x="1135" y="448" text-anchor="middle">submission.csv</text>
+  <path class="arrow" d="M275 405 H355"/><path class="arrow" d="M585 405 H665"/><path class="arrow" d="M925 405 H1005"/>
+  <path class="arrow" d="M1135 230 V285 H795 V340"/>
+  <text class="body" x="45" y="525">LLM understands language. Python validates the rules, performs the calculations, and records uncertainty.</text>
+</svg>

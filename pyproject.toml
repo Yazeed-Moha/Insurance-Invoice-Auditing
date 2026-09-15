@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insurance-audit"
+version = "0.3.0"
+description = "Reproducible contract-to-invoice auditing pipeline"
+requires-python = ">=3.11"
+dependencies = ["zai-sdk==0.2.3", "groq==1.7.0", "jsonschema==4.26.0", "python-dotenv==1.2.3"]
+
+[project.scripts]
+insurance-audit = "audit_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["audit_pipeline*"]

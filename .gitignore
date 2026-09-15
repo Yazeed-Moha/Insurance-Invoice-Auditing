@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+.idea/
+*.egg-info/
+
+# Generated run output is ignored, except for the validated contract
+# extractions needed to reproduce the submitted H1-H3 results without a key.
+artifacts/*
+!artifacts/contract_cache/
+artifacts/contract_cache/*
+!artifacts/contract_cache/hospital_1.json
+!artifacts/contract_cache/hospital_2.json
+!artifacts/contract_cache/hospital_3.json

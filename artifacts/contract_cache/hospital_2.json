@@ -1,0 +1,3144 @@
+{
+  "schema_version": "2.0",
+  "hospital_id": "H2",
+  "metadata": {
+    "hospital_id": "H2",
+    "contract_number": "INS-H2-2024-1183",
+    "provider": "St. Auben Metropolitan Hospital Trust",
+    "payer": "Meridian Health Assurance Group",
+    "effective_from": "2024-01-01",
+    "effective_to": "2025-12-31",
+    "currency": "GBP",
+    "rounding": "half_up_cent"
+  },
+  "services": [
+    {
+      "service_id": "6.6",
+      "name": "Advanced Dermatologic Specimen Analysis",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 2215000,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.6 In respect of Advanced Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 221.50 per item supplied. The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day."
+          }
+        }
+      ],
+      "daily_cap": 24
+    },
+    {
+      "service_id": "aecc-18.3",
+      "name": "Advanced Endocrine Case Conference",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 17400,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.3",
+            "text": "In respect of Advanced Endocrine Case Conference, the Provider shall invoice the Payer at the rate of GBP 174.00 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "advanced_gastrointestinal_endoscopic_procedure",
+      "name": "Advanced Gastrointestinal Endoscopic Procedure",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 377750,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group) > 14.4",
+            "text": "In respect of Advanced Gastrointestinal Endoscopic Procedure, the Provider shall invoice the Payer at the rate of GBP 3,777.50 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "advanced_infectious_isolation_room_occupancy",
+      "name": "Advanced Infectious Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": "2024-01-01",
+          "effective_to": "2025-12-31",
+          "rate_cents": 164825,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.1 In respect of Advanced Infectious Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,648.25 per day of service. The Provider shall not bill more than twenty-four (24) days of this Service for a Patient on a single Service Day."
+          }
+        }
+      ],
+      "daily_cap": 24
+    },
+    {
+      "service_id": "advanced_rheumatologic_isolation_room_occupancy",
+      "name": "Advanced Rheumatologic Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 141675,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.5 In respect of Advanced Rheumatologic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,416.75 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "ambulatory_haematology_nutritional_support",
+      "name": "Ambulatory Haematology Nutritional Support",
+      "aliases": [],
+      "unit": "per_unit_dispensed",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 8675,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Ambulatory Haematology Nutritional Support, the Provider shall invoice the Payer at the rate of GBP 86.75 per unit dispensed."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S2",
+      "name": "Ambulatory Vascular Infusion Therapy",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 4225,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.2 In respect of Ambulatory Vascular Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 42.25 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "assisted_gastrointestinal_biopsy_procedure",
+      "name": "Assisted Gastrointestinal Biopsy Procedure",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 379625,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.6 In respect of Assisted Gastrointestinal Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 3,796.25 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "assisted_infectious_telemetry_monitoring",
+      "name": "Assisted Infectious Telemetry Monitoring",
+      "aliases": [],
+      "unit": "per_hour_per_item",
+      "rates": [
+        {
+          "effective_from": "2024-01-01",
+          "effective_to": "2025-12-31",
+          "rate_cents": 10625,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.2 In respect of Assisted Infectious Telemetry Monitoring, the Provider shall invoice the Payer at the rate of GBP 106.25 per hour, per item."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "8.1",
+      "name": "Assisted Musculoskeletal Diagnostic Imaging",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 1805000,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.1 In respect of Assisted Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 180.50 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "bedside_obstetric_physiotherapy_session",
+      "name": "Bedside Obstetric Physiotherapy Session",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 6950,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group) > 14.5",
+            "text": "In respect of Bedside Obstetric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 69.50 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "borf-18.4",
+      "name": "Bedside Ophthalmic Radiotherapy Fraction",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 123550,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.4",
+            "text": "In respect of Bedside Ophthalmic Radiotherapy Fraction, the Provider shall invoice the Payer at the rate of GBP 1,235.50 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S3",
+      "name": "Bedside Pulmonary Pharmaceutical Dispensing",
+      "aliases": [],
+      "unit": "per_unit_dispensed",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 6900,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.3 In respect of Bedside Pulmonary Pharmaceutical Dispensing, the Provider shall invoice the Payer at the rate of GBP 69.00 per unit dispensed."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "comprehensive_haematology_transport_service",
+      "name": "Comprehensive Haematology Transport Service",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 16650,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Comprehensive Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 166.50 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "comprehensive_otolaryngologic_case_conference",
+      "name": "Comprehensive Otolaryngologic Case Conference",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": "2024-01-01",
+          "effective_to": "2025-12-31",
+          "rate_cents": 16525,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.3 In respect of Comprehensive Otolaryngologic Case Conference, the Provider shall invoice the Payer at the rate of GBP 165.25 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "continuous_otolaryngologic_discharge_planning",
+      "name": "Continuous Otolaryngologic Discharge Planning",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 19325,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "12.1 In respect of Continuous Otolaryngologic Discharge Planning, the Provider shall invoice the Payer at the rate of GBP 193.25 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "8.2",
+      "name": "Continuous Renal Ventilation Support",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 5432500,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.2 In respect of Continuous Renal Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 543.25 per day of service. Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%)."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "elective_cardiac_nursing_observation",
+      "name": "Elective Cardiac Nursing Observation",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 6775,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group) > 14.6",
+            "text": "In respect of Elective Cardiac Nursing Observation, the Provider shall invoice the Payer at the rate of GBP 67.75 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "ects-18.5",
+      "name": "Elective Cardiac Transport Service",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 9125,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.5",
+            "text": "In respect of Elective Cardiac Transport Service, the Provider shall invoice the Payer at the rate of GBP 91.25 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "8.3",
+      "name": "Emergency Haematology Transport Service",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 967500,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.3 In respect of Emergency Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 96.75 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "emergency_paediatric_theatre_time",
+      "name": "Emergency Paediatric Theatre Time",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 8500,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Emergency Paediatric Theatre Time, the Provider shall invoice the Payer at the rate of GBP 85.00 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S4",
+      "name": "Emergency Pulmonary Ventilation Support",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 54675,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.4 In respect of Emergency Pulmonary Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 546.75 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "emergency_renal_infusion_therapy",
+      "name": "Emergency Renal Infusion Therapy",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": "2024-01-01",
+          "effective_to": "2025-12-31",
+          "rate_cents": 5925,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.4 In respect of Emergency Renal Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 59.25 per hour. Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twelve percent (12%)."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "edsa-18.6",
+      "name": "Extended Dermatologic Specimen Analysis",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 35200,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.6",
+            "text": "In respect of Extended Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 352.00 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "extended_orthopaedic_radiotherapy_fraction",
+      "name": "Extended Orthopaedic Radiotherapy Fraction",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 27900,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "12.2 In respect of Extended Orthopaedic Radiotherapy Fraction, the Provider shall invoice the Payer at the rate of GBP 279.00 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "extended_otolaryngologic_nutritional_support",
+      "name": "Extended Otolaryngologic Nutritional Support",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 54975,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.1",
+            "text": "In respect of Extended Otolaryngologic Nutritional Support, the Provider shall invoice the Payer at the rate of GBP 549.75 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S5",
+      "name": "Extended Vascular Home Visit",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 43200,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.5 In respect of Extended Vascular Home Visit, the Provider shall invoice the Payer at the rate of GBP 432.00 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "focused_cardiac_dialysis_session",
+      "name": "Focused Cardiac Dialysis Session",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 237000,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.4 In respect of Focused Cardiac Dialysis Session, the Provider shall invoice the Payer at the rate of GBP 2,370.00 per procedure."
+          }
+        }
+      ],
+      "daily_cap": 6
+    },
+    {
+      "service_id": "focused_ophthalmic_laboratory_panel",
+      "name": "Focused Ophthalmic Laboratory Panel",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 26800,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.2",
+            "text": "In respect of Focused Ophthalmic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 268.00 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "focused_palliative_recovery_room_occupancy",
+      "name": "Focused Palliative Recovery Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": "2024-01-01",
+          "effective_to": "2025-12-31",
+          "rate_cents": 52775,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.5 In respect of Focused Palliative Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 527.75 per night of occupancy. Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) nights, the rate applicable to that Service Day shall be increased by thirty percent (30%)."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "focused_pulmonary_pharmaceutical_dispensing",
+      "name": "Focused Pulmonary Pharmaceutical Dispensing",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 10050,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Focused Pulmonary Pharmaceutical Dispensing, the Provider shall invoice the Payer at the rate of GBP 100.50 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "focused_vascular_transfusion_service",
+      "name": "Focused Vascular Transfusion Service",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 450700,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "In respect of Focused Vascular Transfusion Service, the Provider shall invoice the Payer at the rate of GBP 4,507.00 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.1",
+      "name": "Inpatient Ophthalmic Recovery Room Occupancy",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 7725,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.1 In respect of Inpatient Ophthalmic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 77.25 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S6",
+      "name": "Inpatient Orthopaedic Recovery Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 52100,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.6 In respect of Inpatient Orthopaedic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 521.00 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "inpatient_paediatric_isolation_room_occupancy",
+      "name": "Inpatient Paediatric Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 148400,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Inpatient Paediatric Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,484.00 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intensive_infectious_physiotherapy_session",
+      "name": "Intensive Infectious Physiotherapy Session",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 34475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.3",
+            "text": "In respect of Intensive Infectious Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 344.75 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.2",
+      "name": "Intensive Neurological Rehabilitation Programme",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 14125,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.2 In respect of Intensive Neurological Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 141.25 per visit."
+          }
+        }
+      ],
+      "daily_cap": 12
+    },
+    {
+      "service_id": "intensive_otolaryngologic_rehabilitation_programme",
+      "name": "Intensive Otolaryngologic Rehabilitation Programme",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 97200,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article IV — Contracted Services (One Group)",
+            "text": "4.6 In respect of Intensive Otolaryngologic Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 972.00 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intensive_paediatric_infusion_therapy",
+      "name": "Intensive Paediatric Infusion Therapy",
+      "aliases": [],
+      "unit": "per_unit_dispensed",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 2900,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "In respect of Intensive Paediatric Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 29.00 per unit dispensed."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intensive_palliative_ward_bed_occupancy",
+      "name": "Intensive Palliative Ward Bed Occupancy",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 136725,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.5 In respect of Intensive Palliative Ward Bed Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,367.25 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intermittent_cardiac_specimen_analysis",
+      "name": "Intermittent Cardiac Specimen Analysis",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 26675,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVI — Contracted Services (Twelve Group)",
+            "text": "In respect of Intermittent Cardiac Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 266.75 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intermittent_ophthalmic_anaesthesia_administration",
+      "name": "Intermittent Ophthalmic Anaesthesia Administration",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 391950,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.1 In respect of Intermittent Ophthalmic Anaesthesia Administration, the Provider shall invoice the Payer at the rate of GBP 3,919.50 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intermittent_orthopaedic_recovery_room_occupancy",
+      "name": "Intermittent Orthopaedic Recovery Room Occupancy",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 12600,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.1",
+            "text": "In respect of Intermittent Orthopaedic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 126.00 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intermittent_otolaryngologic_rehabilitation_programme",
+      "name": "Intermittent Otolaryngologic Rehabilitation Programme",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 30775,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "In respect of Intermittent Otolaryngologic Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 307.75 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "intermittent_psychiatric_laboratory_panel",
+      "name": "Intermittent Psychiatric Laboratory Panel",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 50475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VIII — Contracted Services (Three Group)",
+            "text": "8.6 In respect of Intermittent Psychiatric Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 504.75 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "outpatient_haematology_biopsy_procedure",
+      "name": "Outpatient Haematology Biopsy Procedure",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 89775,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.4",
+            "text": "In respect of Outpatient Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 897.75 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "postoperative_cardiac_physiotherapy_session",
+      "name": "Postoperative Cardiac Physiotherapy Session",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 33775,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XII — Contracted Services (Five Group)",
+            "text": "In respect of Postoperative Cardiac Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 337.75 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.3",
+      "name": "Postoperative Neurological Rehabilitation Programme",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 52250,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.3 In respect of Postoperative Neurological Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 522.50 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "postoperative_ophthalmic_anaesthesia_administration",
+      "name": "Postoperative Ophthalmic Anaesthesia Administration",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 20625,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.2",
+            "text": "In respect of Postoperative Ophthalmic Anaesthesia Administration, the Provider shall invoice the Payer at the rate of GBP 206.25 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "postoperative_orthopaedic_isolation_room_occupancy",
+      "name": "Postoperative Orthopaedic Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 120475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.2 In respect of Postoperative Orthopaedic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,204.75 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "postoperative_paediatric_theatre_time",
+      "name": "Postoperative Paediatric Theatre Time",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 34000,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+            "text": "28.1 In respect of Postoperative Paediatric Theatre Time, the Provider shall invoice the Payer at the rate of GBP 340.00 per hour."
+          }
+        }
+      ],
+      "daily_cap": 6
+    },
+    {
+      "service_id": "postoperative_pulmonary_infusion_therapy",
+      "name": "Postoperative Pulmonary Infusion Therapy",
+      "aliases": [],
+      "unit": "per_unit_dispensed",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 6725,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.1 In respect of Postoperative Pulmonary Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 67.25 per unit dispensed."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "postoperative_vascular_transport_service",
+      "name": "Postoperative Vascular Transport Service",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 15025,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.5",
+            "text": "In respect of Postoperative Vascular Transport Service, the Provider shall invoice the Payer at the rate of GBP 150.25 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "preoperative_cardiac_specimen_analysis",
+      "name": "Preoperative Cardiac Specimen Analysis",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 5375,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+            "text": "28.2 In respect of Preoperative Cardiac Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 53.75 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.4",
+      "name": "Preoperative Neurological Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 170475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.4 In respect of Preoperative Neurological Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,704.75 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "preoperative_obstetric_home_visit",
+      "name": "Preoperative Obstetric Home Visit",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 18475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.2 In respect of Preoperative Obstetric Home Visit, the Provider shall invoice the Payer at the rate of GBP 184.75 per visit."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "preoperative_obstetric_physiotherapy_session",
+      "name": "Preoperative Obstetric Physiotherapy Session",
+      "aliases": [],
+      "unit": "per_visit",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 12800,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group)",
+            "text": "In respect of Preoperative Obstetric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 128.00 per visit."
+          }
+        }
+      ],
+      "daily_cap": 4
+    },
+    {
+      "service_id": "preoperative_orthopaedic_ventilation_support",
+      "name": "Preoperative Orthopaedic Ventilation Support",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 84325,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.3",
+            "text": "In respect of Preoperative Orthopaedic Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 843.25 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "preoperative_vascular_imaging_interpretation",
+      "name": "Preoperative Vascular Imaging Interpretation",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 9100,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.3 In respect of Preoperative Vascular Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 91.00 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "routine_geriatric_physiotherapy_session",
+      "name": "Routine Geriatric Physiotherapy Session",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 21250,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVI — Contracted Services (Seven Group) > 16.6",
+            "text": "In respect of Routine Geriatric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 212.50 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "routine_infectious_isolation_room_occupancy",
+      "name": "Routine Infectious Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 191325,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.4",
+            "text": "In respect of Routine Infectious Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,913.25 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "routine_neurological_imaging_interpretation",
+      "name": "Routine Neurological Imaging Interpretation",
+      "aliases": [],
+      "unit": "per_test",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 11375,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+            "text": "28.3 In respect of Routine Neurological Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 113.75 per test."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.5",
+      "name": "Routine Ophthalmic Laboratory Panel",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 23100,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.5 In respect of Routine Ophthalmic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 231.00 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "specialist_psychiatric_sterilisation_service",
+      "name": "Specialist Psychiatric Sterilisation Service",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 213700,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.4 In respect of Specialist Psychiatric Sterilisation Service, the Provider shall invoice the Payer at the rate of GBP 2,137.00 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "smtm-18.1",
+      "name": "Standard Metabolic Telemetry Monitoring",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 16400,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.1",
+            "text": "In respect of Standard Metabolic Telemetry Monitoring, the Provider shall invoice the Payer at the rate of GBP 164.00 per hour."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "standard_musculoskeletal_recovery_room_occupancy",
+      "name": "Standard Musculoskeletal Recovery Room Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 87050,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.5",
+            "text": "In respect of Standard Musculoskeletal Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 870.50 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "standard_neurological_isolation_room_occupancy",
+      "name": "Standard Neurological Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 78075,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.3 In respect of Standard Neurological Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 780.75 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "standard_orthopaedic_isolation_room_occupancy",
+      "name": "Standard Orthopaedic Isolation Room Occupancy",
+      "aliases": [],
+      "unit": "per_day",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 33275,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group) > 14.2",
+            "text": "In respect of Standard Orthopaedic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 332.75 per day of service."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "svc-20.6",
+      "name": "Standard Paediatric Infusion Therapy",
+      "aliases": [],
+      "unit": "per_hour",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 12750,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XX — Contracted Services (Nine Group)",
+            "text": "20.6 In respect of Standard Paediatric Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 127.50 per hour."
+          }
+        }
+      ],
+      "daily_cap": 4
+    },
+    {
+      "service_id": "standard_psychiatric_transfusion_service",
+      "name": "Standard Psychiatric Transfusion Service",
+      "aliases": [],
+      "unit": "per_unit_dispensed",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 7025,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+            "text": "28.4 In respect of Standard Psychiatric Transfusion Service, the Provider shall invoice the Payer at the rate of GBP 70.25 per unit dispensed."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "6.5",
+      "name": "Supervised Haematology Biopsy Procedure",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 2080000,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article VI — Contracted Services (Two Group)",
+            "text": "6.5 In respect of Supervised Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 208.00 per item supplied. Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%)."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "shep-18.2",
+      "name": "Supervised Hepatic Endoscopic Procedure",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 249825,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XVIII — Contracted Services (Eight Group), 18.2",
+            "text": "In respect of Supervised Hepatic Endoscopic Procedure, the Provider shall invoice the Payer at the rate of GBP 2,498.25 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "supervised_metabolic_laboratory_panel",
+      "name": "Supervised Metabolic Laboratory Panel",
+      "aliases": [],
+      "unit": "per_item",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 7925,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article X — Contracted Services (Four Group)",
+            "text": "10.4 In respect of Supervised Metabolic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 79.25 per item supplied."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "S1",
+      "name": "Supervised Musculoskeletal Diagnostic Imaging",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 424475,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXII — Contracted Services (Ten Group)",
+            "text": "22.1 In respect of Supervised Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 4,244.75 per procedure."
+          }
+        }
+      ],
+      "daily_cap": null
+    },
+    {
+      "service_id": "supervised_neurological_imaging_interpretation",
+      "name": "Supervised Neurological Imaging Interpretation",
+      "aliases": [],
+      "unit": "per_procedure",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 77200,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XXIV — Contracted Services (Eleven Group) > 24.6",
+            "text": "In respect of Supervised Neurological Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 772.00 per procedure."
+          }
+        }
+      ],
+      "daily_cap": 6
+    },
+    {
+      "service_id": "supervised_rheumatologic_critical_care_occupancy",
+      "name": "Supervised Rheumatologic Critical Care Occupancy",
+      "aliases": [],
+      "unit": "per_night",
+      "rates": [
+        {
+          "effective_from": null,
+          "effective_to": null,
+          "rate_cents": 72800,
+          "evidence": {
+            "source_file": "master_services_agreement.md",
+            "section": "Article XIV — Contracted Services (Six Group) > 14.3",
+            "text": "In respect of Supervised Rheumatologic Critical Care Occupancy, the Provider shall invoice the Payer at the rate of GBP 728.00 per night of occupancy."
+          }
+        }
+      ],
+      "daily_cap": null
+    }
+  ],
+  "rules": {
+    "threshold_premiums": [
+      {
+        "service": "Focused Palliative Recovery Room Occupancy",
+        "threshold": 12,
+        "basis_points": 3000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article IV — Contracted Services (One Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) nights, the rate applicable to that Service Day shall be increased by thirty percent (30%)."
+        }
+      },
+      {
+        "service": "Supervised Metabolic Laboratory Panel",
+        "threshold": 16,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article X — Contracted Services (Four Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds sixteen (16) items, the rate applicable to that Service Day shall be increased by fifteen percent (15%)."
+        }
+      },
+      {
+        "service": "Focused Vascular Transfusion Service",
+        "threshold": 12,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XII — Contracted Services (Five Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) procedures, the rate applicable to that Service Day shall be increased by fifteen percent (15%)."
+        }
+      },
+      {
+        "service": "Elective Cardiac Nursing Observation",
+        "threshold": 12,
+        "basis_points": 4000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XIV — Contracted Services (Six Group) > 14.6",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) hours, the rate applicable to that Service Day shall be increased by forty percent (40%)."
+        }
+      },
+      {
+        "service": "Preoperative Neurological Isolation Room Occupancy",
+        "threshold": 6,
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XX — Contracted Services (Nine Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds six (6) nights, the rate applicable to that Service Day shall be increased by twenty-five percent (25%)."
+        }
+      },
+      {
+        "service": "Ambulatory Vascular Infusion Therapy",
+        "threshold": 10,
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXII — Contracted Services (Ten Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds ten (10) hours, the rate applicable to that Service Day shall be increased by twenty-five percent (25%)."
+        }
+      },
+      {
+        "service": "Standard Musculoskeletal Recovery Room Occupancy",
+        "threshold": 6,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXIV — Contracted Services (Eleven Group) > 24.5",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds six (6) nights, the rate applicable to that Service Day shall be increased by fifteen percent (15%)."
+        }
+      },
+      {
+        "service": "Ambulatory Haematology Nutritional Support",
+        "threshold": 12,
+        "basis_points": 4000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) units, the rate applicable to that Service Day shall be increased by forty percent (40%)."
+        }
+      },
+      {
+        "service": "Inpatient Paediatric Isolation Room Occupancy",
+        "threshold": 8,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds eight (8) nights, the rate applicable to that Service Day shall be increased by fifteen percent (15%)."
+        }
+      }
+    ],
+    "weekend_uplifts": [
+      {
+        "service": "Emergency Renal Infusion Therapy",
+        "basis_points": 1200,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article IV — Contracted Services (One Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twelve percent (12%)."
+        }
+      },
+      {
+        "service": "Intermittent Ophthalmic Anaesthesia Administration",
+        "basis_points": 2000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VI — Contracted Services (Two Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%)."
+        }
+      },
+      {
+        "service": "Supervised Haematology Biopsy Procedure",
+        "basis_points": 2000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VI — Contracted Services (Two Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%)."
+        }
+      },
+      {
+        "service": "Continuous Renal Ventilation Support",
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VIII — Contracted Services (Three Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%)."
+        }
+      },
+      {
+        "service": "Standard Neurological Isolation Room Occupancy",
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article X — Contracted Services (Four Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by fifteen percent (15%)."
+        }
+      },
+      {
+        "service": "Extended Orthopaedic Radiotherapy Fraction",
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XII — Contracted Services (Five Group)",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%)."
+        }
+      },
+      {
+        "service": "Extended Otolaryngologic Nutritional Support",
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVI — Contracted Services (Seven Group) > 16.1",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by fifteen percent (15%)."
+        }
+      },
+      {
+        "service": "Preoperative Orthopaedic Ventilation Support",
+        "basis_points": 1000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXIV — Contracted Services (Eleven Group) > 24.3",
+          "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by ten percent (10%)."
+        }
+      }
+    ],
+    "volume_discounts": [
+      {
+        "service": "Emergency Haematology Transport Service",
+        "threshold": 60,
+        "basis_points": 1000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VIII — Contracted Services (Three Group)",
+          "text": "Where cumulative utilisation of this Service exceeds sixty (60) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Emergency Haematology Transport Service",
+        "threshold": 180,
+        "basis_points": 2000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VIII — Contracted Services (Three Group)",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred and eighty (180) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty percent (20%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Preoperative Obstetric Home Visit",
+        "threshold": 100,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article X — Contracted Services (Four Group)",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred (100) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of fifteen percent (15%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Preoperative Obstetric Home Visit",
+        "threshold": 300,
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article X — Contracted Services (Four Group)",
+          "text": "Where cumulative utilisation of this Service exceeds three hundred (300) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty-five percent (25%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Advanced Gastrointestinal Endoscopic Procedure",
+        "threshold": 120,
+        "basis_points": 1200,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XIV — Contracted Services (Six Group) > 14.4",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) procedures, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Elective Cardiac Transport Service",
+        "threshold": 120,
+        "basis_points": 1000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVIII — Contracted Services (Eight Group), 18.5",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Inpatient Orthopaedic Recovery Room Occupancy",
+        "threshold": 100,
+        "basis_points": 1200,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXII — Contracted Services (Ten Group)",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred (100) nights, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Postoperative Ophthalmic Anaesthesia Administration",
+        "threshold": 80,
+        "basis_points": 1000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXIV — Contracted Services (Eleven Group) > 24.2",
+          "text": "Where cumulative utilisation of this Service exceeds eighty (80) hours, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Postoperative Ophthalmic Anaesthesia Administration",
+        "threshold": 240,
+        "basis_points": 3000,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXIV — Contracted Services (Eleven Group) > 24.2",
+          "text": "Where cumulative utilisation of this Service exceeds two hundred and forty (240) hours, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of thirty percent (30%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Focused Pulmonary Pharmaceutical Dispensing",
+        "threshold": 100,
+        "basis_points": 1500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred (100) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of fifteen percent (15%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Focused Pulmonary Pharmaceutical Dispensing",
+        "threshold": 300,
+        "basis_points": 2500,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "Where cumulative utilisation of this Service exceeds three hundred (300) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty-five percent (25%) shall be applied to each subsequent Unit."
+        }
+      },
+      {
+        "service": "Routine Neurological Imaging Interpretation",
+        "threshold": 120,
+        "basis_points": 1200,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+          "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) tests, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit."
+        }
+      }
+    ],
+    "daily_caps": [
+      {
+        "service": "Advanced Infectious Isolation Room Occupancy",
+        "limit": 24,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article IV — Contracted Services (One Group)",
+          "text": "The Provider shall not bill more than twenty-four (24) days of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Advanced Dermatologic Specimen Analysis",
+        "limit": 24,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VI — Contracted Services (Two Group)",
+          "text": "The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Focused Cardiac Dialysis Session",
+        "limit": 6,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VIII — Contracted Services (Three Group)",
+          "text": "The Provider shall not bill more than six (6) procedures of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Preoperative Obstetric Physiotherapy Session",
+        "limit": 4,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XIV — Contracted Services (Six Group)",
+          "text": "The Provider shall not bill more than four (4) visits of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Intensive Neurological Rehabilitation Programme",
+        "limit": 12,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XX — Contracted Services (Nine Group)",
+          "text": "The Provider shall not bill more than twelve (12) visits of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Standard Paediatric Infusion Therapy",
+        "limit": 4,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XX — Contracted Services (Nine Group)",
+          "text": "The Provider shall not bill more than four (4) hours of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Supervised Neurological Imaging Interpretation",
+        "limit": 6,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXIV — Contracted Services (Eleven Group) > 24.6",
+          "text": "The Provider shall not bill more than six (6) procedures of this Service for a Patient on a single Service Day."
+        }
+      },
+      {
+        "service": "Postoperative Paediatric Theatre Time",
+        "limit": 6,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVIII — Contracted Services (Thirteen Group)",
+          "text": "The Provider shall not bill more than six (6) hours of this Service for a Patient on a single Service Day."
+        }
+      }
+    ],
+    "bundles": [
+      {
+        "service_a": "Postoperative Orthopaedic Isolation Room Occupancy",
+        "service_b": "Bedside Obstetric Physiotherapy Session",
+        "rate_a_cents": 90350,
+        "rate_b_cents": 5200,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VI — Contracted Services (Two Group)",
+          "text": "Where this Service and Bedside Obstetric Physiotherapy Session are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 903.50 per night of occupancy and Bedside Obstetric Physiotherapy Session at GBP 52.00 per hour, in substitution for their standalone rates."
+        }
+      },
+      {
+        "service_a": "Standard Orthopaedic Isolation Room Occupancy",
+        "service_b": "Outpatient Haematology Biopsy Procedure",
+        "rate_a_cents": 27275,
+        "rate_b_cents": 73625,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XIV — Contracted Services (Six Group) > 14.2",
+          "text": "Where this Service and Outpatient Haematology Biopsy Procedure are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 272.75 per day of service and Outpatient Haematology Biopsy Procedure at GBP 736.25 per procedure, in substitution for their standalone rates."
+        }
+      },
+      {
+        "service_a": "Bedside Obstetric Physiotherapy Session",
+        "service_b": "Postoperative Orthopaedic Isolation Room Occupancy",
+        "rate_a_cents": 5200,
+        "rate_b_cents": 90350,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XIV — Contracted Services (Six Group) > 14.5",
+          "text": "Where this Service and Postoperative Orthopaedic Isolation Room Occupancy are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 52.00 per hour and Postoperative Orthopaedic Isolation Room Occupancy at GBP 903.50 per night of occupancy, in substitution for their standalone rates."
+        }
+      },
+      {
+        "service_a": "Outpatient Haematology Biopsy Procedure",
+        "service_b": "Standard Orthopaedic Isolation Room Occupancy",
+        "rate_a_cents": 73625,
+        "rate_b_cents": 27275,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVI — Contracted Services (Seven Group) > 16.4",
+          "text": "Where this Service and Standard Orthopaedic Isolation Room Occupancy are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 736.25 per procedure and Standard Orthopaedic Isolation Room Occupancy at GBP 272.75 per day of service, in substitution for their standalone rates."
+        }
+      },
+      {
+        "service_a": "Bedside Pulmonary Pharmaceutical Dispensing",
+        "service_b": "Comprehensive Haematology Transport Service",
+        "rate_a_cents": 5875,
+        "rate_b_cents": 14150,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXII — Contracted Services (Ten Group)",
+          "text": "Where this Service and Comprehensive Haematology Transport Service are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 58.75 per unit dispensed and Comprehensive Haematology Transport Service at GBP 141.50 per item supplied, in substitution for their standalone rates."
+        }
+      },
+      {
+        "service_a": "Comprehensive Haematology Transport Service",
+        "service_b": "Bedside Pulmonary Pharmaceutical Dispensing",
+        "rate_a_cents": 14150,
+        "rate_b_cents": 5875,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "Where this Service and Bedside Pulmonary Pharmaceutical Dispensing are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 141.50 per item supplied and Bedside Pulmonary Pharmaceutical Dispensing at GBP 58.75 per unit dispensed, in substitution for their standalone rates."
+        }
+      }
+    ],
+    "exclusions": [
+      {
+        "service_a": "Intermittent Psychiatric Laboratory Panel",
+        "service_b": "Emergency Pulmonary Ventilation Support",
+        "window_days": 7,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article VIII — Contracted Services (Three Group)",
+          "text": "This Service is not billable where Emergency Pulmonary Ventilation Support has been delivered to the same Patient within seven (7) days of the Service Date."
+        }
+      },
+      {
+        "service_a": "Intensive Infectious Physiotherapy Session",
+        "service_b": "Routine Ophthalmic Laboratory Panel",
+        "window_days": 10,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVI — Contracted Services (Seven Group) > 16.3",
+          "text": "This Service is not billable where Routine Ophthalmic Laboratory Panel has been delivered to the same Patient within ten (10) days of the Service Date."
+        }
+      },
+      {
+        "service_a": "Standard Metabolic Telemetry Monitoring",
+        "service_b": "Routine Geriatric Physiotherapy Session",
+        "window_days": 14,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVIII — Contracted Services (Eight Group), 18.1",
+          "text": "This Service is not billable where Routine Geriatric Physiotherapy Session has been delivered to the same Patient within fourteen (14) days of the Service Date."
+        }
+      },
+      {
+        "service_a": "Extended Dermatologic Specimen Analysis",
+        "service_b": "Advanced Endocrine Case Conference",
+        "window_days": 7,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XVIII — Contracted Services (Eight Group), 18.6",
+          "text": "This Service is not billable where Advanced Endocrine Case Conference has been delivered to the same Patient within seven (7) days of the Service Date."
+        }
+      },
+      {
+        "service_a": "Postoperative Neurological Rehabilitation Programme",
+        "service_b": "Bedside Ophthalmic Radiotherapy Fraction",
+        "window_days": 7,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XX — Contracted Services (Nine Group)",
+          "text": "This Service is not billable where Bedside Ophthalmic Radiotherapy Fraction has been delivered to the same Patient within seven (7) days of the Service Date."
+        }
+      },
+      {
+        "service_a": "Emergency Paediatric Theatre Time",
+        "service_b": "Routine Geriatric Physiotherapy Session",
+        "window_days": 7,
+        "evidence": {
+          "source_file": "master_services_agreement.md",
+          "section": "Article XXVI — Contracted Services (Twelve Group)",
+          "text": "This Service is not billable where Routine Geriatric Physiotherapy Session has been delivered to the same Patient within seven (7) days of the Service Date."
+        }
+      }
+    ],
+    "facility_multipliers": [],
+    "plan_multipliers": []
+  },
+  "calculation_order": [
+    "bundle",
+    "facility_multiplier",
+    "plan_multiplier",
+    "premium",
+    "volume_discount"
+  ],
+  "extraction": {
+    "method": "llm",
+    "provider": "glm",
+    "model": "glm-5.3",
+    "prompt_version": "contract_extraction_v5",
+    "schema_version": "2.0",
+    "source_hash": "81bb54b941991551913e19111d5fed540ee1d8e5159a9cb241c716169172aad4",
+    "generated_at": "2026-09-14T15:46:35.967124+00:00",
+    "temperature": 0.0,
+    "chunk_count": 17,
+    "max_chunk_chars": 12000,
+    "max_completion_tokens": 8192,
+    "confidence": 0.95,
+    "validation_attempts": 1,
+    "repair_prompt_version": null,
+    "repaired_chunks": [],
+    "resumed_chunks": [
+      "master_services_agreement-001-04fa41b9aa",
+      "master_services_agreement-002-a660aaf40c",
+      "master_services_agreement-003-f73085d0d3",
+      "master_services_agreement-004-f792212508",
+      "master_services_agreement-005-e4ae710cfb",
+      "master_services_agreement-006-581e9de997",
+      "master_services_agreement-007-6ba758d18d",
+      "master_services_agreement-008-9151daa909",
+      "master_services_agreement-009-c410a6a64c",
+      "master_services_agreement-010-a2353d2f04",
+      "master_services_agreement-011-8332deab63",
+      "master_services_agreement-012-9daae70cdc",
+      "master_services_agreement-013-20301d082f",
+      "master_services_agreement-014-6917a897d4",
+      "master_services_agreement-015-a4765dc34c",
+      "master_services_agreement-016-d144608619",
+      "master_services_agreement-017-1db05c4596"
+    ],
+    "incomplete_resumed_chunks": [],
+    "source_coverage": [
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u001-c1dacba854",
+        "kind": "prose_clause",
+        "text": "4.1 In respect of Advanced Infectious Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,648.25 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Infectious Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u002-03a35c7634",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than twenty-four (24) days of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Infectious Isolation Room Occupancy:rate:0",
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u003-92b829049e",
+        "kind": "prose_clause",
+        "text": "4.2 In respect of Assisted Infectious Telemetry Monitoring, the Provider shall invoice the Payer at the rate of GBP 106.25 per hour, per item.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Assisted Infectious Telemetry Monitoring:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u004-0befce4614",
+        "kind": "prose_clause",
+        "text": "4.3 In respect of Comprehensive Otolaryngologic Case Conference, the Provider shall invoice the Payer at the rate of GBP 165.25 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Comprehensive Otolaryngologic Case Conference:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u005-05efcc8c5a",
+        "kind": "prose_clause",
+        "text": "4.4 In respect of Emergency Renal Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 59.25 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Emergency Renal Infusion Therapy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u006-7584ac23c0",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twelve percent (12%).",
+        "status": "covered",
+        "matched_facts": [
+          "service:Emergency Renal Infusion Therapy:rate:0",
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u007-22f61bc17c",
+        "kind": "prose_clause",
+        "text": "4.5 In respect of Focused Palliative Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 527.75 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Palliative Recovery Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-001-04fa41b9aa-u008-3c36590ca5",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) nights, the rate applicable to that Service Day shall be increased by thirty percent (30%).",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Palliative Recovery Room Occupancy:rate:0",
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u001-8bd9fd49f3",
+        "kind": "prose_clause",
+        "text": "4.6 In respect of Intensive Otolaryngologic Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 972.00 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intensive Otolaryngologic Rehabilitation Programme:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u002-2c3f4a341c",
+        "kind": "prose_clause",
+        "text": "6.1 In respect of Intermittent Ophthalmic Anaesthesia Administration, the Provider shall invoice the Payer at the rate of GBP 3,919.50 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intermittent Ophthalmic Anaesthesia Administration:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u003-e0f34592d7",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u004-1d6e20202c",
+        "kind": "prose_clause",
+        "text": "6.2 In respect of Postoperative Orthopaedic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,204.75 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Orthopaedic Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u005-2d1d6e70c4",
+        "kind": "prose_clause",
+        "text": "Where this Service and Bedside Obstetric Physiotherapy Session are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 903.50 per night of occupancy and Bedside Obstetric Physiotherapy Session at GBP 52.00 per hour, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u006-8f01b7f64c",
+        "kind": "prose_clause",
+        "text": "6.3 In respect of Preoperative Vascular Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 91.00 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Vascular Imaging Interpretation:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-002-a660aaf40c-u007-b231d2a661",
+        "kind": "prose_clause",
+        "text": "6.4 In respect of Specialist Psychiatric Sterilisation Service, the Provider shall invoice the Payer at the rate of GBP 2,137.00 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Specialist Psychiatric Sterilisation Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u001-5deddb692a",
+        "kind": "prose_clause",
+        "text": "6.5 In respect of Supervised Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 208.00 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Haematology Biopsy Procedure:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u002-e0f34592d7",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%).",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Haematology Biopsy Procedure:rate:0",
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u003-81f70d9ae2",
+        "kind": "prose_clause",
+        "text": "6.6 In respect of Advanced Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 221.50 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Dermatologic Specimen Analysis:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u004-189d850a55",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Dermatologic Specimen Analysis:rate:0",
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u005-ed00679e9e",
+        "kind": "prose_clause",
+        "text": "8.1 In respect of Assisted Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 180.50 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Assisted Musculoskeletal Diagnostic Imaging:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u006-94f3fa5156",
+        "kind": "prose_clause",
+        "text": "8.2 In respect of Continuous Renal Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 543.25 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Continuous Renal Ventilation Support:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u007-1b0470f2df",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%).",
+        "status": "covered",
+        "matched_facts": [
+          "service:Continuous Renal Ventilation Support:rate:0",
+          "rule:weekend_uplifts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u008-6e4755bb1c",
+        "kind": "prose_clause",
+        "text": "8.3 In respect of Emergency Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 96.75 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Emergency Haematology Transport Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u009-ccf845e1e0",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds sixty (60) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-003-f73085d0d3-u010-a868f051db",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred and eighty (180) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty percent (20%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u001-ff6c4aa68a",
+        "kind": "prose_clause",
+        "text": "8.4 In respect of Focused Cardiac Dialysis Session, the Provider shall invoice the Payer at the rate of GBP 2,370.00 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Cardiac Dialysis Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u002-33ee32549a",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than six (6) procedures of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u003-cffa909dd6",
+        "kind": "prose_clause",
+        "text": "8.5 In respect of Intensive Palliative Ward Bed Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,367.25 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intensive Palliative Ward Bed Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u004-ba1bee776d",
+        "kind": "prose_clause",
+        "text": "8.6 In respect of Intermittent Psychiatric Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 504.75 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intermittent Psychiatric Laboratory Panel:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u005-039c229f56",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Emergency Pulmonary Ventilation Support has been delivered to the same Patient within seven (7) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u006-35be599b0f",
+        "kind": "prose_clause",
+        "text": "10.1 In respect of Postoperative Pulmonary Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 67.25 per unit dispensed.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Pulmonary Infusion Therapy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u007-8a0faca9fc",
+        "kind": "prose_clause",
+        "text": "10.2 In respect of Preoperative Obstetric Home Visit, the Provider shall invoice the Payer at the rate of GBP 184.75 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Obstetric Home Visit:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u008-a39b98cb6b",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred (100) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of fifteen percent (15%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-004-f792212508-u009-48e0a6c34a",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds three hundred (300) visits, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty-five percent (25%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u001-b8bc460bbb",
+        "kind": "prose_clause",
+        "text": "10.3 In respect of Standard Neurological Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 780.75 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Neurological Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u002-4ac30d69ec",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u003-c8d423f88e",
+        "kind": "prose_clause",
+        "text": "10.4 In respect of Supervised Metabolic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 79.25 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Metabolic Laboratory Panel:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u004-8c264d9e19",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds sixteen (16) items, the rate applicable to that Service Day shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u005-93f00bff55",
+        "kind": "prose_clause",
+        "text": "10.5 In respect of Advanced Rheumatologic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,416.75 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Rheumatologic Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u006-ac009441f4",
+        "kind": "prose_clause",
+        "text": "10.6 In respect of Assisted Gastrointestinal Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 3,796.25 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Assisted Gastrointestinal Biopsy Procedure:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u007-af90a17863",
+        "kind": "prose_clause",
+        "text": "12.1 In respect of Continuous Otolaryngologic Discharge Planning, the Provider shall invoice the Payer at the rate of GBP 193.25 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Continuous Otolaryngologic Discharge Planning:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u008-eb1fca7cc3",
+        "kind": "prose_clause",
+        "text": "12.2 In respect of Extended Orthopaedic Radiotherapy Fraction, the Provider shall invoice the Payer at the rate of GBP 279.00 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Extended Orthopaedic Radiotherapy Fraction:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-005-e4ae710cfb-u009-1b0470f2df",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:weekend_uplifts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u001-5670cffd81",
+        "kind": "prose_clause",
+        "text": "12.3 In respect of Focused Vascular Transfusion Service, the Provider shall invoice the Payer at the rate of GBP 4,507.00 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Vascular Transfusion Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u002-7bfabad66a",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) procedures, the rate applicable to that Service Day shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u003-d0e7a9ee61",
+        "kind": "prose_clause",
+        "text": "12.4 In respect of Intensive Paediatric Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 29.00 per unit dispensed.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intensive Paediatric Infusion Therapy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u004-2e3f76be23",
+        "kind": "prose_clause",
+        "text": "12.5 In respect of Intermittent Otolaryngologic Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 307.75 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intermittent Otolaryngologic Rehabilitation Programme:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u005-8ab2efe4c1",
+        "kind": "prose_clause",
+        "text": "12.6 In respect of Postoperative Cardiac Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 337.75 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Cardiac Physiotherapy Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u006-4e03b719eb",
+        "kind": "prose_clause",
+        "text": "14.1 In respect of Preoperative Obstetric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 128.00 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Obstetric Physiotherapy Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-006-581e9de997-u007-1987d166c4",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than four (4) visits of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u001-92b2700cb7",
+        "kind": "prose_clause",
+        "text": "14.2 In respect of Standard Orthopaedic Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 332.75 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Orthopaedic Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u002-e61e253e74",
+        "kind": "prose_clause",
+        "text": "Where this Service and Outpatient Haematology Biopsy Procedure are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 272.75 per day of service and Outpatient Haematology Biopsy Procedure at GBP 736.25 per procedure, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u003-41503b17b4",
+        "kind": "prose_clause",
+        "text": "14.3 In respect of Supervised Rheumatologic Critical Care Occupancy, the Provider shall invoice the Payer at the rate of GBP 728.00 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Rheumatologic Critical Care Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u004-dc5957e59f",
+        "kind": "prose_clause",
+        "text": "14.4 In respect of Advanced Gastrointestinal Endoscopic Procedure, the Provider shall invoice the Payer at the rate of GBP 3,777.50 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Gastrointestinal Endoscopic Procedure:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u005-dfb8bf11b9",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) procedures, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u006-f5a54474d1",
+        "kind": "prose_clause",
+        "text": "14.5 In respect of Bedside Obstetric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 69.50 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Bedside Obstetric Physiotherapy Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u007-e61447749b",
+        "kind": "prose_clause",
+        "text": "Where this Service and Postoperative Orthopaedic Isolation Room Occupancy are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 52.00 per hour and Postoperative Orthopaedic Isolation Room Occupancy at GBP 903.50 per night of occupancy, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u008-bccc685781",
+        "kind": "prose_clause",
+        "text": "14.6 In respect of Elective Cardiac Nursing Observation, the Provider shall invoice the Payer at the rate of GBP 67.75 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Elective Cardiac Nursing Observation:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-007-6ba758d18d-u009-a9ee064129",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) hours, the rate applicable to that Service Day shall be increased by forty percent (40%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u001-73256a67cd",
+        "kind": "prose_clause",
+        "text": "16.1 In respect of Extended Otolaryngologic Nutritional Support, the Provider shall invoice the Payer at the rate of GBP 549.75 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Extended Otolaryngologic Nutritional Support:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u002-4ac30d69ec",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u003-3c0b98ed48",
+        "kind": "prose_clause",
+        "text": "16.2 In respect of Focused Ophthalmic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 268.00 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Ophthalmic Laboratory Panel:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u004-4379ca00ce",
+        "kind": "prose_clause",
+        "text": "16.3 In respect of Intensive Infectious Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 344.75 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intensive Infectious Physiotherapy Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u005-af9f91b6ee",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Routine Ophthalmic Laboratory Panel has been delivered to the same Patient within ten (10) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u006-f20df34309",
+        "kind": "prose_clause",
+        "text": "16.4 In respect of Outpatient Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 897.75 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Outpatient Haematology Biopsy Procedure:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u007-9a9a993660",
+        "kind": "prose_clause",
+        "text": "Where this Service and Standard Orthopaedic Isolation Room Occupancy are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 736.25 per procedure and Standard Orthopaedic Isolation Room Occupancy at GBP 272.75 per day of service, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u008-3029221a12",
+        "kind": "prose_clause",
+        "text": "16.5 In respect of Postoperative Vascular Transport Service, the Provider shall invoice the Payer at the rate of GBP 150.25 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Vascular Transport Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-008-9151daa909-u009-589852239f",
+        "kind": "prose_clause",
+        "text": "16.6 In respect of Routine Geriatric Physiotherapy Session, the Provider shall invoice the Payer at the rate of GBP 212.50 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Routine Geriatric Physiotherapy Session:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u001-63ce15bddb",
+        "kind": "prose_clause",
+        "text": "18.1 In respect of Standard Metabolic Telemetry Monitoring, the Provider shall invoice the Payer at the rate of GBP 164.00 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Metabolic Telemetry Monitoring:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u002-b6fdb2a472",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Routine Geriatric Physiotherapy Session has been delivered to the same Patient within fourteen (14) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u003-505c7792ee",
+        "kind": "prose_clause",
+        "text": "18.2 In respect of Supervised Hepatic Endoscopic Procedure, the Provider shall invoice the Payer at the rate of GBP 2,498.25 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Hepatic Endoscopic Procedure:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u004-1cce6c9732",
+        "kind": "prose_clause",
+        "text": "18.3 In respect of Advanced Endocrine Case Conference, the Provider shall invoice the Payer at the rate of GBP 174.00 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Advanced Endocrine Case Conference:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u005-1e01c105e9",
+        "kind": "prose_clause",
+        "text": "18.4 In respect of Bedside Ophthalmic Radiotherapy Fraction, the Provider shall invoice the Payer at the rate of GBP 1,235.50 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Bedside Ophthalmic Radiotherapy Fraction:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u006-17da4c3aa0",
+        "kind": "prose_clause",
+        "text": "18.5 In respect of Elective Cardiac Transport Service, the Provider shall invoice the Payer at the rate of GBP 91.25 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Elective Cardiac Transport Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u007-e196c1b36e",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u008-c3b4d02495",
+        "kind": "prose_clause",
+        "text": "18.6 In respect of Extended Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 352.00 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Extended Dermatologic Specimen Analysis:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-009-c410a6a64c-u009-2a25626f98",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Advanced Endocrine Case Conference has been delivered to the same Patient within seven (7) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u001-92af616e1b",
+        "kind": "prose_clause",
+        "text": "20.1 In respect of Inpatient Ophthalmic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 77.25 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Inpatient Ophthalmic Recovery Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u002-db7a5f398e",
+        "kind": "prose_clause",
+        "text": "20.2 In respect of Intensive Neurological Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 141.25 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intensive Neurological Rehabilitation Programme:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u003-7fd5d7d61c",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than twelve (12) visits of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u004-13dfad4b06",
+        "kind": "prose_clause",
+        "text": "20.3 In respect of Postoperative Neurological Rehabilitation Programme, the Provider shall invoice the Payer at the rate of GBP 522.50 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Neurological Rehabilitation Programme:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u005-0774333a36",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Bedside Ophthalmic Radiotherapy Fraction has been delivered to the same Patient within seven (7) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u006-93727b3c1a",
+        "kind": "prose_clause",
+        "text": "20.4 In respect of Preoperative Neurological Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,704.75 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Neurological Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u007-978ca313c2",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds six (6) nights, the rate applicable to that Service Day shall be increased by twenty-five percent (25%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u008-56e08d5191",
+        "kind": "prose_clause",
+        "text": "20.5 In respect of Routine Ophthalmic Laboratory Panel, the Provider shall invoice the Payer at the rate of GBP 231.00 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Routine Ophthalmic Laboratory Panel:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u009-185a4ab9d6",
+        "kind": "prose_clause",
+        "text": "20.6 In respect of Standard Paediatric Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 127.50 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Paediatric Infusion Therapy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-010-a2353d2f04-u010-a022e6040d",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than four (4) hours of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u001-c240ce58db",
+        "kind": "prose_clause",
+        "text": "22.1 In respect of Supervised Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 4,244.75 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Musculoskeletal Diagnostic Imaging:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u002-60714dbc97",
+        "kind": "prose_clause",
+        "text": "22.2 In respect of Ambulatory Vascular Infusion Therapy, the Provider shall invoice the Payer at the rate of GBP 42.25 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Ambulatory Vascular Infusion Therapy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u003-4936214fff",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds ten (10) hours, the rate applicable to that Service Day shall be increased by twenty-five percent (25%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u004-689fb82423",
+        "kind": "prose_clause",
+        "text": "22.3 In respect of Bedside Pulmonary Pharmaceutical Dispensing, the Provider shall invoice the Payer at the rate of GBP 69.00 per unit dispensed.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Bedside Pulmonary Pharmaceutical Dispensing:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u005-dcd239bf2e",
+        "kind": "prose_clause",
+        "text": "Where this Service and Comprehensive Haematology Transport Service are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 58.75 per unit dispensed and Comprehensive Haematology Transport Service at GBP 141.50 per item supplied, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u006-024c02f36a",
+        "kind": "prose_clause",
+        "text": "22.4 In respect of Emergency Pulmonary Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 546.75 per day of service.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Emergency Pulmonary Ventilation Support:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u007-e774dafc25",
+        "kind": "prose_clause",
+        "text": "22.5 In respect of Extended Vascular Home Visit, the Provider shall invoice the Payer at the rate of GBP 432.00 per visit.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Extended Vascular Home Visit:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u008-8e92bdeaed",
+        "kind": "prose_clause",
+        "text": "22.6 In respect of Inpatient Orthopaedic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 521.00 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Inpatient Orthopaedic Recovery Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-011-8332deab63-u009-8fadcbf8d4",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred (100) nights, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u001-e907ec7052",
+        "kind": "prose_clause",
+        "text": "24.1 In respect of Intermittent Orthopaedic Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 126.00 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intermittent Orthopaedic Recovery Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u002-f724f1d4e5",
+        "kind": "prose_clause",
+        "text": "24.2 In respect of Postoperative Ophthalmic Anaesthesia Administration, the Provider shall invoice the Payer at the rate of GBP 206.25 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Ophthalmic Anaesthesia Administration:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u003-4823ab197b",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds eighty (80) hours, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of ten percent (10%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u004-31fa125ad0",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds two hundred and forty (240) hours, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of thirty percent (30%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u005-fbba7113f6",
+        "kind": "prose_clause",
+        "text": "24.3 In respect of Preoperative Orthopaedic Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 843.25 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Orthopaedic Ventilation Support:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u006-fe71faf8cc",
+        "kind": "prose_clause",
+        "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by ten percent (10%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:weekend_uplifts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u007-beb357378c",
+        "kind": "prose_clause",
+        "text": "24.4 In respect of Routine Infectious Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,913.25 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Routine Infectious Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u008-2ed7a37d8c",
+        "kind": "prose_clause",
+        "text": "24.5 In respect of Standard Musculoskeletal Recovery Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 870.50 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Musculoskeletal Recovery Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u009-47e77d2b46",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds six (6) nights, the rate applicable to that Service Day shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u010-2635c34811",
+        "kind": "prose_clause",
+        "text": "24.6 In respect of Supervised Neurological Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 772.00 per procedure.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Supervised Neurological Imaging Interpretation:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-012-9daae70cdc-u011-33ee32549a",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than six (6) procedures of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u001-04e8a38c8a",
+        "kind": "prose_clause",
+        "text": "26.1 In respect of Ambulatory Haematology Nutritional Support, the Provider shall invoice the Payer at the rate of GBP 86.75 per unit dispensed.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Ambulatory Haematology Nutritional Support:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u002-3feba3edc6",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds twelve (12) units, the rate applicable to that Service Day shall be increased by forty percent (40%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u003-27a3cc0294",
+        "kind": "prose_clause",
+        "text": "26.2 In respect of Comprehensive Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 166.50 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Comprehensive Haematology Transport Service:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u004-f843295650",
+        "kind": "prose_clause",
+        "text": "Where this Service and Bedside Pulmonary Pharmaceutical Dispensing are both delivered to the same Patient on the same Service Day, the two shall be billed as a bundle, this Service at GBP 141.50 per item supplied and Bedside Pulmonary Pharmaceutical Dispensing at GBP 58.75 per unit dispensed, in substitution for their standalone rates.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:bundles:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u005-05e2cbb754",
+        "kind": "prose_clause",
+        "text": "26.3 In respect of Emergency Paediatric Theatre Time, the Provider shall invoice the Payer at the rate of GBP 85.00 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Emergency Paediatric Theatre Time:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u006-18d3802e5b",
+        "kind": "prose_clause",
+        "text": "This Service is not billable where Routine Geriatric Physiotherapy Session has been delivered to the same Patient within seven (7) days of the Service Date.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:exclusions:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u007-c2ae1543d9",
+        "kind": "prose_clause",
+        "text": "26.4 In respect of Focused Pulmonary Pharmaceutical Dispensing, the Provider shall invoice the Payer at the rate of GBP 100.50 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Focused Pulmonary Pharmaceutical Dispensing:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u008-bf23e87e60",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred (100) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of fifteen percent (15%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u009-dac0a1a834",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds three hundred (300) items, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twenty-five percent (25%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u010-f0a6f8da08",
+        "kind": "prose_clause",
+        "text": "26.5 In respect of Inpatient Paediatric Isolation Room Occupancy, the Provider shall invoice the Payer at the rate of GBP 1,484.00 per night of occupancy.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Inpatient Paediatric Isolation Room Occupancy:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u011-919b5d8089",
+        "kind": "prose_clause",
+        "text": "Where the aggregate quantity of this Service delivered to a Patient on a single Service Day exceeds eight (8) nights, the rate applicable to that Service Day shall be increased by fifteen percent (15%).",
+        "status": "covered",
+        "matched_facts": [
+          "rule:threshold_premiums:1"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-013-20301d082f-u012-6be1c40dfd",
+        "kind": "prose_clause",
+        "text": "26.6 In respect of Intermittent Cardiac Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 266.75 per item supplied.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Intermittent Cardiac Specimen Analysis:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u001-294f881804",
+        "kind": "prose_clause",
+        "text": "28.1 In respect of Postoperative Paediatric Theatre Time, the Provider shall invoice the Payer at the rate of GBP 340.00 per hour.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Postoperative Paediatric Theatre Time:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u002-cd12992efd",
+        "kind": "prose_clause",
+        "text": "The Provider shall not bill more than six (6) hours of this Service for a Patient on a single Service Day.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:daily_caps:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u003-3370dd6517",
+        "kind": "prose_clause",
+        "text": "28.2 In respect of Preoperative Cardiac Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 53.75 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Preoperative Cardiac Specimen Analysis:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u004-1fca572739",
+        "kind": "prose_clause",
+        "text": "28.3 In respect of Routine Neurological Imaging Interpretation, the Provider shall invoice the Payer at the rate of GBP 113.75 per test.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Routine Neurological Imaging Interpretation:rate:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u005-b84830f072",
+        "kind": "prose_clause",
+        "text": "Where cumulative utilisation of this Service exceeds one hundred and twenty (120) tests, counted cumulatively across the whole term of this Agreement and aggregated across all Patients, a discount of twelve percent (12%) shall be applied to each subsequent Unit.",
+        "status": "covered",
+        "matched_facts": [
+          "rule:volume_discounts:0"
+        ]
+      },
+      {
+        "source_unit_id": "master_services_agreement-014-6917a897d4-u006-15c2618761",
+        "kind": "prose_clause",
+        "text": "28.4 In respect of Standard Psychiatric Transfusion Service, the Provider shall invoice the Payer at the rate of GBP 70.25 per unit dispensed.",
+        "status": "covered",
+        "matched_facts": [
+          "service:Standard Psychiatric Transfusion Service:rate:0"
+        ]
+      }
+    ],
+    "llm_run_directory": "artifacts/llm_runs/hospital_2/81bb54b94199/glm-5.3/20260914T154635.967124Z",
+    "source_files": [
+      "contracts/hospital_2/master_services_agreement.md"
+    ],
+    "model_warnings": [
+      "Comprehensive Haematology Transport Service appears only as the bundle partner in clause 22.3; its standalone rate is not present in this chunk, so no service entry was created for it.",
+      "Bedside Pulmonary Pharmaceutical Dispensing appears only as a bundled counterpart in this chunk; its standalone rate is not stated here.",
+      "Chunk contains only legal boilerplate (governing law, entire agreement, severance and waiver); no financial, pricing, quantity, eligibility, timing, or calculation facts present."
+    ],
+    "warnings": [],
+    "chunks_directory": "artifacts/chunks/hospital_2/81bb54b94199"
+  }
+}
