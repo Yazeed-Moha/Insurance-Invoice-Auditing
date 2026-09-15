@@ -4,8 +4,6 @@ A reproducible pipeline that reads hospital contracts, converts them into valida
 
 ![Insurance audit pipeline](docs/assets/insurance-audit-flow.svg)
 
-[Edit the diagram in Excalidraw](docs/assets/insurance-audit-flow.excalidraw).
-
 ## How it works
 
 1. **Understand the contract:** GLM-5.3 extracts services, rates, dates, premiums, discounts, bundles, exclusions, caps, amendments, and calculation order.
