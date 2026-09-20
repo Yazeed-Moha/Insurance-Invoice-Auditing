@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from audit_pipeline.contract_agent import (
     ContractUnderstandingAgent, FRAGMENT_SCHEMA, merge_fragment_patch, merge_fragments,
-    normalise_fragment, reconcile_rate_schedules,
+    normalise_fragment, numeric_evidence_warnings, reconcile_rate_schedules,
 )
 from audit_pipeline.chunking import ContractChunk, chunk_contract
 from audit_pipeline.coverage import coverage_report
@@ -23,6 +23,69 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PipelineTests(unittest.TestCase):
+    def test_numeric_evidence_rejects_rate_scaled_by_100_twice(self):
+        fragment = {
+            "services": [{
+                "name": "Emergency Transport",
+                "rates": [{
+                    "rate_cents": 967500,
+                    "evidence": {"text": "The rate is GBP 96.75 per visit."},
+                }],
+            }],
+            "rules": {},
+        }
+        warnings = numeric_evidence_warnings(fragment)
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("evidence supports [9675]", warnings[0])
+
+    def test_numeric_evidence_accepts_rate_and_rule_values(self):
+        evidence = {
+            "text": "The rate is GBP 96.75. After 60 visits, a discount of ten percent (10%) applies."
+        }
+        fragment = {
+            "services": [{"name": "Emergency Transport", "rates": [{
+                "rate_cents": 9675, "evidence": evidence,
+            }]}],
+            "rules": {"volume_discounts": [{
+                "service": "Emergency Transport", "threshold": 60,
+                "basis_points": 1000, "evidence": evidence,
+            }]},
+        }
+        self.assertEqual(numeric_evidence_warnings(fragment), [])
+
+    def test_numeric_evidence_checks_multiplier_ratio(self):
+        evidence = {"text": "| Service A | 1 | 1.10 | 0.92 |"}
+        accepted = {
+            "services": [],
+            "rules": {"facility_multipliers": [{
+                "service": "Service A", "facility": "F-NORTH",
+                "numerator": 11, "denominator": 10, "evidence": evidence,
+            }]},
+        }
+        self.assertEqual(numeric_evidence_warnings(accepted), [])
+
+        rejected = json.loads(json.dumps(accepted))
+        rejected["rules"]["facility_multipliers"][0]["numerator"] = 12
+        warnings = numeric_evidence_warnings(rejected)
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("extracted 12/10", warnings[0])
+
+    def test_targeted_patch_replaces_same_evidenced_rate_correction(self):
+        rules = {kind: [] for kind in RULE_KINDS}
+        evidence = {"source_file": "contract.md", "section": "Rates", "text": "Rate GBP 96.75"}
+        service = {"service_id": "a", "name": "A", "aliases": [], "unit": "per_visit",
+                   "daily_cap": None, "rates": [{"effective_from": None, "effective_to": None,
+                                                   "rate_cents": 967500, "evidence": evidence}]}
+        base = {"metadata": {}, "services": [service], "rules": rules,
+                "calculation_order": [], "warnings": []}
+        corrected = json.loads(json.dumps(service))
+        corrected["rates"][0]["rate_cents"] = 9675
+        patch_fragment = {"metadata": {}, "services": [corrected],
+                          "rules": {kind: [] for kind in RULE_KINDS},
+                          "calculation_order": [], "warnings": []}
+        merged = merge_fragment_patch(base, patch_fragment)
+        self.assertEqual([rate["rate_cents"] for rate in merged["services"][0]["rates"]], [9675])
+
     def test_complete_amendment_schedule_shadows_broad_original_rate(self):
         service = {
             "name": "Service A",

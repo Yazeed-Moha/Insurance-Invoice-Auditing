@@ -17,7 +17,7 @@ Hospital 1 was the labelled development set. I compared each generated predictio
 
 The classification result shows that the pipeline identified every labelled erroneous invoice without false positives on this development set. The lower expected-total result is important: correctly deciding that an invoice is wrong does not guarantee that every component of the corrected amount is exact. Category-level review also showed overlap between generic price mismatches and more specific premium, discount, or unit errors.
 
-These figures are development results, not an unbiased estimate of performance on a new hospital, because Hospital 1 was used while refining the implementation. Hospitals 2 and 3 have no labels, so I report coverage rather than unsupported accuracy claims: the final files contain predictions for all 1,125 Hospital 2 invoices and all 932 Hospital 3 invoices. I intentionally did not submit Hospitals 4 and 5 rather than provide thinly validated coverage.
+These figures are development results, not an unbiased estimate of performance on a new hospital, because Hospital 1 was used while refining the implementation. Hospitals 2–5 have no labels, so I report coverage rather than unsupported accuracy claims: the final submission contains all 3,942 unseen invoices (1,125 H2; 932 H3; 835 H4; 1,050 H5). Each contract passed the same evidence, numeric, reference, date, and coverage gates before invoice pricing.
 
 ## Uncertainty and limitations
 
@@ -41,4 +41,4 @@ Second, I would create a small adjudicated set of ambiguous line descriptions an
 
 Third, I would reserve part of Hospital 1 as a locked holdout or create contract perturbation tests so prompt and rule-engine changes are not measured on the same examples used for development. I would also test whether confidence values correspond to observed correctness, not only whether classifications are correct.
 
-Finally, I would extend the same evidence-first implementation to Hospitals 4 and 5, add more contract-shape regression tests, and refine category prioritisation so the main diagnosis remains concise while detailed contributing findings stay available in the audit trace.
+Finally, I would add more contract-shape regression tests and refine category prioritisation so the main diagnosis remains concise while detailed contributing findings stay available in the audit trace. I would also obtain a small independently labelled sample from each unseen hospital to measure cross-contract generalisation directly.

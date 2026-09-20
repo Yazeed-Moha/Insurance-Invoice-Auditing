@@ -25,6 +25,10 @@ The runtime uses LLM extraction for all five supplied Markdown contracts, then v
 
 AI assistance was used to inspect the supplied repository, reason about the architecture, draft the contract agent/rule engine/tests, and document the approach. No Hospital 2–5 ground truth or external domain data was used. Runtime LLM outputs must pass the same schema, reference, coverage, and evidence checks before pricing.
 
+## Post-submission improvement
+
+The initial leaderboard result exposed a validation gap rather than a pricing-engine failure: five Hospital 2 rates cited the correct source rows but converted pounds to cents twice. The former validator proved that the evidence quote existed, but did not compare the extracted number with that quote. I added deterministic numeric-evidence checks for rates, percentages, thresholds, caps, bundle prices, exclusion windows, and multipliers, plus targeted repair and regression tests. This reduced Hospital 2 flags from 726/1,125 (64.5%) to 76/1,125 (6.8%) without using unseen labels. I then applied the same validated flow to Hospitals 4 and 5 and included all four unseen hospitals in the updated submission.
+
 ## What I would do with another week
 
 I would benchmark a smaller, cheaper contract-understanding model and add a deterministic fallback for availability. The fallback would run only after an LLM/API failure, would produce the same canonical schema, and would be held to the same source-coverage, evidence, reference, date, numeric, and amendment validation gates. Its lower-confidence provenance would be explicit in the artifact and observable in monitoring; it would never silently replace a failed model result.

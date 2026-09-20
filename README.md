@@ -23,7 +23,7 @@ python3 -m venv .venv
 .venv/bin/pip install -e .
 ```
 
-The repository includes validated H1-H3 contract extractions, so the submitted results can be reproduced without an API key. For a new or changed contract, create `.env` and add your Z.AI key:
+The repository includes validated H1-H5 contract extractions, so the submitted results can be reproduced without an API key. For a new or changed contract, create `.env` and add your Z.AI key:
 
 ```bash
 cp .env.example .env
@@ -45,18 +45,18 @@ Run Hospital 1 and generate its evaluation report:
 .venv/bin/python audit_pipeline/cli.py --hospitals 1
 ```
 
-Generate the submitted Hospital 2 and Hospital 3 predictions:
+Generate all submitted predictions:
 
 ```bash
-.venv/bin/python audit_pipeline/cli.py --hospitals 2 3
+.venv/bin/python audit_pipeline/cli.py --hospitals 2 3 4 5
 ```
 
 Validated contract extractions are reused only when the contract, model, prompt, provider, and schema versions still match. A cache mismatch triggers a fresh LLM extraction and therefore requires an API key.
 
 ## Main outputs
 
-- `submission.csv` — combined Hospital 2 and Hospital 3 submission.
-- `hospital_2_submission.csv` and `hospital_3_submission.csv` — the same predictions separated by hospital.
+- `submission.csv` — combined Hospital 2–5 submission in the supplied template format.
+- `hospital_N_submission.csv` — the same predictions separated by hospital for H2–H5.
 - `ASSESSMENT_WRITEUP.pdf` — two-page summary of measurement, uncertainty, and next steps.
 - `artifacts/hospital_N_predictions.csv` — predictions for one hospital.
 - `artifacts/audit_details/hospital_N.json` — service matches, applied rules, calculations, and uncertainty.
@@ -74,6 +74,6 @@ Validated contract extractions are reused only when the contract, model, prompt,
 
 ## Evaluation and scope
 
-Hospital 1 is the labelled development set. The current run achieves **100% classification accuracy and F1**, with **97.8% exact expected-total accuracy**. The final submission covers Hospitals 2 and 3; Hospitals 4 and 5 were intentionally left for further work rather than submitted with thin validation.
+Hospital 1 is the labelled development set. The current run achieves **100% classification accuracy and F1**, with **97.8% exact expected-total accuracy**. The final submission contains all **3,942** unseen invoices from Hospitals 2–5. Because those hospitals have no labels, this is reported as coverage rather than an unsupported accuracy claim.
 
 See [DECISION_LOG.md](DECISION_LOG.md) for assumptions, limitations, AI-assistance disclosure, and what I would do with another week.

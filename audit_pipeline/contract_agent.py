@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
+from decimal import Decimal
 import hashlib
 import json
 import logging
@@ -16,13 +17,20 @@ from jsonschema import ValidationError, validate
 from .chunking import ContractChunk, chunk_contract, save_chunks
 from .coverage import coverage_report
 from .llm import LLMError, StructuredLLMClient, recover_failed_generation
-from .schema import RULE_KINDS, normalise_calculation_order, normalise_unit, validate_contract
+from .schema import (
+    RULE_KINDS, money_to_cents, normalise_calculation_order, normalise_unit,
+    percent_to_basis_points, validate_contract,
+)
 
 
 LOG = logging.getLogger("insurance_audit.contract_agent")
 PROMPT_VERSION = "contract_extraction_v5"
 REPAIR_PROMPT_VERSION = "contract_repair_v2"
 SCHEMA_VERSION = "2.0"
+
+MONEY_IN_EVIDENCE = re.compile(r"(?:GBP|£)\s*([0-9][0-9,]*(?:\.[0-9]{1,2})?)", re.I)
+PERCENT_IN_EVIDENCE = re.compile(r"([0-9]+(?:\.[0-9]+)?)\s*(?:%|percent\b)", re.I)
+NUMBER_IN_EVIDENCE = re.compile(r"(?<![A-Za-z])([0-9]+(?:\.[0-9]+)?)(?![A-Za-z])")
 
 
 EVIDENCE_SCHEMA = {
@@ -105,18 +113,8 @@ def normalise_fragment(fragment: dict[str, Any]) -> dict[str, Any]:
     rules = output.setdefault("rules", {})
     for kind in RULE_KINDS:
         rules.setdefault(kind, [])
-    known_caps = {rule.get("service") for rule in rules["daily_caps"]}
     for service in output.get("services", []):
         service["unit"] = normalise_unit(str(service.get("unit", "")))
-        cap = service.get("daily_cap")
-        if isinstance(cap, int) and cap > 0 and service.get("name") not in known_caps:
-            evidence = next((rate.get("evidence") for rate in service.get("rates", [])
-                             if isinstance(rate.get("evidence"), dict)), None)
-            if evidence is not None:
-                rules["daily_caps"].append({
-                    "service": service.get("name"), "limit": cap, "evidence": evidence,
-                })
-                known_caps.add(service.get("name"))
     # Some models use the canonical service_id in rule references even though
     # the rule schema expects the canonical service name. Both identify the
     # same extracted service, so normalize this before reference validation.
@@ -132,6 +130,127 @@ def normalise_fragment(fragment: dict[str, Any]) -> dict[str, Any]:
                     rule[field] = service_names[rule[field]]
     output["calculation_order"] = normalise_calculation_order(output.get("calculation_order", []))
     return output
+
+
+def numeric_evidence_warnings(fragment: dict[str, Any]) -> list[str]:
+    """Verify extracted financial values against their quoted source text.
+
+    Grounding proves that a quotation exists, but it does not prove that the
+    model converted the quotation correctly. In particular, a pounds amount
+    can otherwise be multiplied by 100 twice while still citing the exact
+    source clause. This check is deliberately independent of hospital layout.
+    """
+    warnings: list[str] = []
+
+    def text(item: dict[str, Any]) -> str:
+        evidence = item.get("evidence")
+        return str(evidence.get("text", "")) if isinstance(evidence, dict) else ""
+
+    def money_values(item: dict[str, Any]) -> set[int]:
+        values: set[int] = set()
+        for match in MONEY_IN_EVIDENCE.finditer(text(item)):
+            try:
+                values.add(money_to_cents(match.group(1)))
+            except (ArithmeticError, ValueError):
+                continue
+        return values
+
+    def percentage_values(item: dict[str, Any]) -> set[int]:
+        values: set[int] = set()
+        for match in PERCENT_IN_EVIDENCE.finditer(text(item)):
+            try:
+                values.add(percent_to_basis_points(match.group(1)))
+            except (ArithmeticError, ValueError):
+                continue
+        return values
+
+    def numeric_values(item: dict[str, Any]) -> set[int]:
+        values: set[int] = set()
+        for match in NUMBER_IN_EVIDENCE.finditer(text(item)):
+            try:
+                number = Decimal(match.group(1))
+            except ArithmeticError:
+                continue
+            if number == number.to_integral_value():
+                values.add(int(number))
+        return values
+
+    def decimal_values(item: dict[str, Any]) -> set[Decimal]:
+        values: set[Decimal] = set()
+        for match in NUMBER_IN_EVIDENCE.finditer(text(item)):
+            try:
+                values.add(Decimal(match.group(1)))
+            except ArithmeticError:
+                continue
+        return values
+
+    for service in fragment.get("services", []):
+        for index, rate in enumerate(service.get("rates", [])):
+            expected = rate.get("rate_cents")
+            supported = money_values(rate)
+            label = f"{service.get('name')} rate {index}"
+            if not supported:
+                warnings.append(f"numeric evidence has no GBP amount for {label}")
+            elif expected not in supported:
+                warnings.append(
+                    f"numeric evidence mismatch for {label}: extracted {expected} cents, "
+                    f"evidence supports {sorted(supported)}"
+                )
+
+    rules = fragment.get("rules", {})
+    for kind in ("threshold_premiums", "weekend_uplifts", "volume_discounts"):
+        for index, rule in enumerate(rules.get(kind, [])):
+            supported = percentage_values(rule)
+            expected = rule.get("basis_points")
+            if not supported:
+                warnings.append(f"numeric evidence has no percentage for {kind}[{index}]")
+            elif expected not in supported:
+                warnings.append(
+                    f"numeric evidence mismatch for {kind}[{index}].basis_points: "
+                    f"extracted {expected}, evidence supports {sorted(supported)}"
+                )
+
+    for kind, field in (
+        ("threshold_premiums", "threshold"),
+        ("volume_discounts", "threshold"),
+        ("daily_caps", "limit"),
+        ("exclusions", "window_days"),
+    ):
+        for index, rule in enumerate(rules.get(kind, [])):
+            supported = numeric_values(rule)
+            expected = rule.get(field)
+            if expected not in supported:
+                warnings.append(
+                    f"numeric evidence mismatch for {kind}[{index}].{field}: "
+                    f"extracted {expected}, evidence integers are {sorted(supported)}"
+                )
+
+    for index, rule in enumerate(rules.get("bundles", [])):
+        supported = money_values(rule)
+        for field in ("rate_a_cents", "rate_b_cents"):
+            expected = rule.get(field)
+            if expected not in supported:
+                warnings.append(
+                    f"numeric evidence mismatch for bundles[{index}].{field}: "
+                    f"extracted {expected}, evidence supports {sorted(supported)}"
+                )
+
+    for kind in ("facility_multipliers", "plan_multipliers"):
+        for index, rule in enumerate(rules.get(kind, [])):
+            denominator = rule.get("denominator")
+            numerator = rule.get("numerator")
+            supported = decimal_values(rule)
+            if not isinstance(denominator, int) or denominator == 0 or not isinstance(numerator, int):
+                warnings.append(f"invalid ratio for {kind}[{index}]")
+                continue
+            expected = Decimal(numerator) / Decimal(denominator)
+            if expected not in supported:
+                warnings.append(
+                    f"numeric evidence mismatch for {kind}[{index}]: "
+                    f"extracted {numerator}/{denominator}, evidence numbers are "
+                    f"{sorted(supported)}"
+                )
+    return warnings
 
 
 FRAGMENT_SCHEMA: dict[str, Any] = {
@@ -193,12 +312,15 @@ def merge_fragment_patch(base: dict[str, Any], patch: dict[str, Any]) -> dict[st
             continue
         existing = services[name]
         rates = existing.setdefault("rates", [])
-        rate_positions = {
-            (item.get("effective_from"), item.get("effective_to"), item.get("rate_cents")): index
-            for index, item in enumerate(rates)
-        }
+        def rate_identity(item: dict[str, Any]) -> tuple[Any, Any, Any]:
+            evidence = item.get("evidence") if isinstance(item.get("evidence"), dict) else {}
+            return (
+                item.get("effective_from"), item.get("effective_to"),
+                evidence.get("source_file"),
+            )
+        rate_positions = {rate_identity(item): index for index, item in enumerate(rates)}
         for item in incoming.get("rates", []):
-            identity = (item.get("effective_from"), item.get("effective_to"), item.get("rate_cents"))
+            identity = rate_identity(item)
             if identity in rate_positions:
                 rates[rate_positions[identity]] = item
             else:
@@ -498,25 +620,37 @@ class ContractUnderstandingAgent:
             fragment = normalise_fragment(fragment)
             fragments.append(fragment)
             _, coverage_warnings = coverage_report(fragment, chunk)
-            chunk_warnings = [*chunk_grounding_warnings(fragment, chunk), *coverage_warnings]
+            chunk_warnings = [
+                *chunk_grounding_warnings(fragment, chunk),
+                *numeric_evidence_warnings(fragment),
+                *coverage_warnings,
+            ]
             if chunk_warnings:
                 failures[index - 1] = chunk_warnings
 
         repaired_ids: list[str] = []
+        validation_attempts = 1
+        repair_template = ""
         if failures:
-            LOG.warning("validation requested targeted repair of %d/%d chunks for %s: %s",
-                        len(failures), len(chunks), hospital_id,
-                        ", ".join(chunks[index].chunk_id for index in failures))
             repair_template = (
                 self.root / "config" / "prompts" / "contract_repair_v2.md"
             ).read_text(encoding="utf-8")
-            for zero_index, feedback in failures.items():
+        for attempt in (2, 3):
+            if not failures:
+                break
+            validation_attempts = attempt
+            LOG.warning("validation requested targeted repair attempt %d of %d chunks for %s: %s",
+                        attempt, len(failures), hospital_id,
+                        ", ".join(chunks[index].chunk_id for index in failures))
+            repaired_indexes = list(failures)
+            for zero_index in repaired_indexes:
+                feedback = failures[zero_index]
                 chunk = chunks[zero_index]
                 repair_prompt = system_prompt + "\n\n" + repair_template + \
                     "\n\nVALIDATION FAILURES:\n- " + "\n- ".join(feedback)
                 repair_fragment = self._generate_chunk(
                     hospital_id, zero_index + 1, len(chunks), chunk,
-                    repair_prompt, run_root, attempt=2,
+                    repair_prompt, run_root, attempt=attempt,
                 )
                 fragments[zero_index] = merge_fragment_patch(
                     fragments[zero_index], repair_fragment,
@@ -526,13 +660,27 @@ class ContractUnderstandingAgent:
                     f"{zero_index + 1:03d}-{chunk.chunk_id}",
                     fragments[zero_index], None,
                 )
-                repaired_ids.append(chunk.chunk_id)
+                if chunk.chunk_id not in repaired_ids:
+                    repaired_ids.append(chunk.chunk_id)
+            failures = {}
+            for zero_index in repaired_indexes:
+                fragment = fragments[zero_index]
+                chunk = chunks[zero_index]
+                _, coverage_warnings = coverage_report(fragment, chunk)
+                issues = [
+                    *chunk_grounding_warnings(fragment, chunk),
+                    *numeric_evidence_warnings(fragment),
+                    *coverage_warnings,
+                ]
+                if issues:
+                    failures[zero_index] = issues
         source_coverage: list[dict[str, Any]] = []
         local_warnings: list[str] = []
         for fragment, chunk in zip(fragments, chunks):
             records, warnings = coverage_report(fragment, chunk)
             source_coverage.extend(records)
             local_warnings.extend(chunk_grounding_warnings(fragment, chunk))
+            local_warnings.extend(numeric_evidence_warnings(fragment))
             local_warnings.extend(warnings)
         manifest = {
             "method": "llm", "provider": self.llm_client.provider, "model": self.llm_client.model,
@@ -544,7 +692,7 @@ class ContractUnderstandingAgent:
                 getattr(self.llm_client, "recommended_max_chunk_chars", self.max_chunk_chars),
             ),
             "max_completion_tokens": getattr(self.llm_client, "max_completion_tokens", None),
-            "confidence": 0.95, "validation_attempts": 2 if repaired_ids else 1,
+            "confidence": 0.95, "validation_attempts": validation_attempts,
             "repair_prompt_version": REPAIR_PROMPT_VERSION if repaired_ids else None,
             "repaired_chunks": repaired_ids,
             "resumed_chunks": resumed_ids,
@@ -555,6 +703,7 @@ class ContractUnderstandingAgent:
         contract = merge_fragments(fragments, hospital_id, [str(path.relative_to(self.root)) for path in paths], manifest)
         contract["extraction"]["warnings"].extend(local_warnings)
         contract["extraction"]["warnings"].extend(grounding_warnings(contract, paths))
+        contract["extraction"]["warnings"].extend(numeric_evidence_warnings(contract))
         return contract
 
     def _generate_chunk(self, hospital_id: str, index: int, total: int,
@@ -611,7 +760,11 @@ class ContractUnderstandingAgent:
 
         def issues_for(fragment: dict[str, Any]) -> list[str]:
             _, coverage_warnings = coverage_report(fragment, chunk)
-            return [*chunk_grounding_warnings(fragment, chunk), *coverage_warnings]
+            return [
+                *chunk_grounding_warnings(fragment, chunk),
+                *numeric_evidence_warnings(fragment),
+                *coverage_warnings,
+            ]
 
         for run_dir in sorted(model_root.glob("*"), reverse=True):
             candidates = sorted(run_dir.glob(f"attempt_*/{stem}"), reverse=True)
@@ -685,7 +838,8 @@ class ContractUnderstandingAgent:
                 or extraction.get("prompt_version") != PROMPT_VERSION
                 or extraction.get("provider") != self.llm_client.provider
                 or extraction.get("model") != self.llm_client.model
-                or validate_contract(contract)):
+                or validate_contract(contract)
+                or numeric_evidence_warnings(contract)):
             return None
         contract["extraction"]["method"] = "validated_cache"
         return contract

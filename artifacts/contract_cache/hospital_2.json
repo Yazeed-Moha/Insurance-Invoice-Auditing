@@ -21,11 +21,11 @@
         {
           "effective_from": null,
           "effective_to": null,
-          "rate_cents": 2215000,
+          "rate_cents": 22150,
           "evidence": {
             "source_file": "master_services_agreement.md",
             "section": "Article VI — Contracted Services (Two Group)",
-            "text": "6.6 In respect of Advanced Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 221.50 per item supplied. The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day."
+            "text": "In respect of Advanced Dermatologic Specimen Analysis, the Provider shall invoice the Payer at the rate of GBP 221.50 per item supplied."
           }
         }
       ],
@@ -192,11 +192,11 @@
         {
           "effective_from": null,
           "effective_to": null,
-          "rate_cents": 1805000,
+          "rate_cents": 18050,
           "evidence": {
             "source_file": "master_services_agreement.md",
             "section": "Article VIII — Contracted Services (Three Group)",
-            "text": "8.1 In respect of Assisted Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 180.50 per item supplied."
+            "text": "In respect of Assisted Musculoskeletal Diagnostic Imaging, the Provider shall invoice the Payer at the rate of GBP 180.50 per item supplied."
           }
         }
       ],
@@ -325,11 +325,11 @@
         {
           "effective_from": null,
           "effective_to": null,
-          "rate_cents": 5432500,
+          "rate_cents": 54325,
           "evidence": {
             "source_file": "master_services_agreement.md",
             "section": "Article VIII — Contracted Services (Three Group)",
-            "text": "8.2 In respect of Continuous Renal Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 543.25 per day of service. Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%)."
+            "text": "In respect of Continuous Renal Ventilation Support, the Provider shall invoice the Payer at the rate of GBP 543.25 per day of service."
           }
         }
       ],
@@ -382,11 +382,11 @@
         {
           "effective_from": null,
           "effective_to": null,
-          "rate_cents": 967500,
+          "rate_cents": 9675,
           "evidence": {
             "source_file": "master_services_agreement.md",
             "section": "Article VIII — Contracted Services (Three Group)",
-            "text": "8.3 In respect of Emergency Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 96.75 per visit."
+            "text": "In respect of Emergency Haematology Transport Service, the Provider shall invoice the Payer at the rate of GBP 96.75 per visit."
           }
         }
       ],
@@ -1351,11 +1351,11 @@
         {
           "effective_from": null,
           "effective_to": null,
-          "rate_cents": 2080000,
+          "rate_cents": 20800,
           "evidence": {
             "source_file": "master_services_agreement.md",
             "section": "Article VI — Contracted Services (Two Group)",
-            "text": "6.5 In respect of Supervised Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 208.00 per item supplied. Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%)."
+            "text": "In respect of Supervised Haematology Biopsy Procedure, the Provider shall invoice the Payer at the rate of GBP 208.00 per item supplied."
           }
         }
       ],
@@ -1761,7 +1761,7 @@
         "limit": 24,
         "evidence": {
           "source_file": "master_services_agreement.md",
-          "section": "Article VI — Contracted Services (Two Group)",
+          "section": "Master Services and Reimbursement Agreement > Article VI — Contracted Services (Two Group)",
           "text": "The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day."
         }
       },
@@ -1967,19 +1967,20 @@
     "prompt_version": "contract_extraction_v5",
     "schema_version": "2.0",
     "source_hash": "81bb54b941991551913e19111d5fed540ee1d8e5159a9cb241c716169172aad4",
-    "generated_at": "2026-09-14T15:46:35.967124+00:00",
+    "generated_at": "2026-09-20T16:10:47.200196+00:00",
     "temperature": 0.0,
     "chunk_count": 17,
     "max_chunk_chars": 12000,
     "max_completion_tokens": 8192,
     "confidence": 0.95,
-    "validation_attempts": 1,
-    "repair_prompt_version": null,
-    "repaired_chunks": [],
+    "validation_attempts": 2,
+    "repair_prompt_version": "contract_repair_v2",
+    "repaired_chunks": [
+      "master_services_agreement-003-f73085d0d3"
+    ],
     "resumed_chunks": [
       "master_services_agreement-001-04fa41b9aa",
       "master_services_agreement-002-a660aaf40c",
-      "master_services_agreement-003-f73085d0d3",
       "master_services_agreement-004-f792212508",
       "master_services_agreement-005-e4ae710cfb",
       "master_services_agreement-006-581e9de997",
@@ -1995,7 +1996,9 @@
       "master_services_agreement-016-d144608619",
       "master_services_agreement-017-1db05c4596"
     ],
-    "incomplete_resumed_chunks": [],
+    "incomplete_resumed_chunks": [
+      "master_services_agreement-003-f73085d0d3"
+    ],
     "source_coverage": [
       {
         "source_unit_id": "master_services_agreement-001-04fa41b9aa-u001-c1dacba854",
@@ -2150,7 +2153,6 @@
         "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty percent (20%).",
         "status": "covered",
         "matched_facts": [
-          "service:Supervised Haematology Biopsy Procedure:rate:0",
           "rule:weekend_uplifts:0"
         ]
       },
@@ -2169,7 +2171,6 @@
         "text": "The Provider shall not bill more than twenty-four (24) items of this Service for a Patient on a single Service Day.",
         "status": "covered",
         "matched_facts": [
-          "service:Advanced Dermatologic Specimen Analysis:rate:0",
           "rule:daily_caps:0"
         ]
       },
@@ -2197,7 +2198,6 @@
         "text": "Where the Service Date of this Service does not fall on a Business Day, the rate applicable to it shall be increased by twenty-five percent (25%).",
         "status": "covered",
         "matched_facts": [
-          "service:Continuous Renal Ventilation Support:rate:0",
           "rule:weekend_uplifts:1"
         ]
       },
@@ -3129,15 +3129,16 @@
         ]
       }
     ],
-    "llm_run_directory": "artifacts/llm_runs/hospital_2/81bb54b94199/glm-5.3/20260914T154635.967124Z",
+    "llm_run_directory": "artifacts/llm_runs/hospital_2/81bb54b94199/glm-5.3/20260920T161047.200196Z",
     "source_files": [
-      "contracts/hospital_2/master_services_agreement.md"
+      "data/contracts/hospital_2/master_services_agreement.md"
     ],
     "model_warnings": [
       "Comprehensive Haematology Transport Service appears only as the bundle partner in clause 22.3; its standalone rate is not present in this chunk, so no service entry was created for it.",
       "Bedside Pulmonary Pharmaceutical Dispensing appears only as a bundled counterpart in this chunk; its standalone rate is not stated here.",
       "Chunk contains only legal boilerplate (governing law, entire agreement, severance and waiver); no financial, pricing, quantity, eligibility, timing, or calculation facts present."
     ],
+    "normalization_notes": [],
     "warnings": [],
     "chunks_directory": "artifacts/chunks/hospital_2/81bb54b94199"
   }
