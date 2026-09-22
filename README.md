@@ -74,6 +74,6 @@ Validated contract extractions are reused only when the contract, model, prompt,
 
 ## Evaluation and scope
 
-Hospital 1 is the labelled development set. The current run achieves **100% classification accuracy and F1**, with **97.8% exact expected-total accuracy**. The final submission contains all **3,942** unseen invoices from Hospitals 2–5. Because those hospitals have no labels, this is reported as coverage rather than an unsupported accuracy claim.
+Hospital 1 is the labelled development set. The current run achieves **100% classification accuracy and F1**, with **98.7% exact expected-total accuracy overall** and **79.3% among erroneous invoices**. The final submission contains all **3,942** unseen invoices from Hospitals 2–5. Because those hospitals have no labels, this is reported as coverage rather than an unsupported accuracy claim.
 
 See [DECISION_LOG.md](DECISION_LOG.md) for assumptions, limitations, AI-assistance disclosure, and what I would do with another week.

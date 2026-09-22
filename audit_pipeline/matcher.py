@@ -89,7 +89,7 @@ class Match:
 
 
 class ServiceMatcher:
-    def __init__(self, contract: dict[str, Any], abstain_below: float = 0.48, margin_below: float = 0.06):
+    def __init__(self, contract: dict[str, Any], abstain_below: float = 0.58, margin_below: float = 0.06):
         self.services = contract["services"]
         self.abstain_below = abstain_below
         self.margin_below = margin_below

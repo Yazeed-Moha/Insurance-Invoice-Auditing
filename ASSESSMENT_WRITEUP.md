@@ -13,9 +13,10 @@ Hospital 1 was the labelled development set. I compared each generated predictio
 | Labelled invoices evaluated | 913 |
 | Classification accuracy | 100.0% |
 | Precision / recall / F1 | 100.0% / 100.0% / 100.0% |
-| Exact expected-total accuracy | 97.8% |
+| Exact expected-total accuracy, all invoices | 98.7% (901/913) |
+| Exact expected-total accuracy, erroneous invoices | 79.3% (46/58) |
 
-The classification result shows that the pipeline identified every labelled erroneous invoice without false positives on this development set. The lower expected-total result is important: correctly deciding that an invoice is wrong does not guarantee that every component of the corrected amount is exact. Category-level review also showed overlap between generic price mismatches and more specific premium, discount, or unit errors.
+The classification result shows that the pipeline identified every labelled erroneous invoice without false positives on this development set. The conditional expected-total result is important: correctly deciding that an invoice is wrong does not guarantee that every component of the corrected amount is exact. Reporting 46/58 separately avoids hiding that limitation behind the 855 correct invoices whose totals are unchanged. Category-level review also showed overlap between generic price mismatches and more specific premium, discount, or unit errors.
 
 These figures are development results, not an unbiased estimate of performance on a new hospital, because Hospital 1 was used while refining the implementation. Hospitals 2–5 have no labels, so I report coverage rather than unsupported accuracy claims: the final submission contains all 3,942 unseen invoices (1,125 H2; 932 H3; 835 H4; 1,050 H5). Each contract passed the same evidence, numeric, reference, date, and coverage gates before invoice pricing.
 

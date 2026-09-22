@@ -53,14 +53,14 @@ INV-H2-000051,0,,2608625,2608625,0.9678
 INV-H2-000052,0,,2851444,2851444,0.9525
 INV-H2-000053,0,,2370600,2370600,0.9770
 INV-H2-000054,1,duplicate_invoice_id|invoice_total_mismatch|premium_omitted|unit_price_mismatch,3754737,1893669,0.9836
-INV-H2-000055,1,premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,4021327,2926577,0.9486
+INV-H2-000055,1,unknown_service,2926577,2926577,0.6768
 INV-H2-000056,0,,1625475,1625475,0.9677
 INV-H2-000057,0,,3320487,3320487,0.9832
 INV-H2-000058,0,,3263975,3263975,0.6847
 INV-H2-000059,0,,1840438,1840438,0.9543
 INV-H2-000060,0,,4650162,4650162,0.9697
 INV-H2-000061,0,,4636871,4636871,0.9587
-INV-H2-000062,1,unit_price_mismatch|volume_discount_incorrectly_applied,2900447,2715547,0.6875
+INV-H2-000062,1,unknown_service,2715547,2715547,0.6825
 INV-H2-000063,0,,1962163,1962163,0.9511
 INV-H2-000064,0,,4804408,4804408,0.9601
 INV-H2-000065,0,,4090090,4090090,0.9709
@@ -246,7 +246,7 @@ INV-H2-000245,0,,3639816,3639816,0.9784
 INV-H2-000246,0,,3928710,3928710,0.9750
 INV-H2-000247,0,,2158429,2158429,0.9598
 INV-H2-000248,1,service_date_out_of_window,2944030,2944030,0.9816
-INV-H2-000249,1,contract_number_mismatch|cross_invoice_duplicate|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,1240475,622800,0.6426
+INV-H2-000249,1,contract_number_mismatch|cross_invoice_duplicate|unknown_service,577725,622800,0.6364
 INV-H2-000250,0,,3640555,3640555,0.9606
 INV-H2-000251,0,,3991755,3991755,0.9744
 INV-H2-000252,0,,2386515,2386515,0.6811
@@ -515,7 +515,7 @@ INV-H2-000515,0,,4751120,4751120,0.9745
 INV-H2-000516,0,,3819506,3819506,0.9589
 INV-H2-000517,0,,599366,599366,0.9747
 INV-H2-000518,0,,1392247,1392247,0.9511
-INV-H2-000519,1,malformed_service_date|premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,4004233,4021008,0.6778
+INV-H2-000519,1,malformed_service_date|unknown_service,4021008,4021008,0.6752
 INV-H2-000520,0,,1266208,1266208,0.9758
 INV-H2-000521,0,,2393093,2393093,0.9667
 INV-H2-000522,1,cross_invoice_duplicate|exclusion_window_violation|service_date_out_of_window,2053001,2437801,0.6888
@@ -654,7 +654,7 @@ INV-H2-000657,0,,2413294,2413294,0.9642
 INV-H2-000658,0,,3097664,3097664,0.9779
 INV-H2-000659,0,,2083537,2083537,0.9627
 INV-H2-000660,0,,1164115,1164115,0.6583
-INV-H2-000661,1,invoice_total_mismatch|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied,1599774,1600124,0.6441
+INV-H2-000661,1,invoice_total_mismatch|unknown_service,1575124,1600124,0.6358
 INV-H2-000662,1,premium_incorrectly_applied|service_date_after_invoice_date|service_date_out_of_window|unit_price_mismatch|volume_discount_incorrectly_applied,2105417,2167344,0.9750
 INV-H2-000663,0,,4682684,4682684,0.6668
 INV-H2-000664,0,,3095870,3095870,0.6846
@@ -775,7 +775,7 @@ INV-H2-000779,0,,797743,797743,0.9861
 INV-H2-000780,0,,1277900,1277900,0.9817
 INV-H2-000781,0,,4176908,4176908,0.9444
 INV-H2-000782,0,,3222420,3222420,0.6782
-INV-H2-000783,1,premium_incorrectly_applied|service_date_after_invoice_date|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,2737047,2563422,0.6654
+INV-H2-000783,1,service_date_after_invoice_date|unknown_service|wrong_unit_basis,2563422,2563422,0.6598
 INV-H2-000784,0,,741930,741930,0.9598
 INV-H2-000785,0,,4069007,4069007,0.6825
 INV-H2-000786,0,,3141003,3141003,0.9748
@@ -879,12 +879,12 @@ INV-H2-000883,0,,1194295,1194295,0.6745
 INV-H2-000884,0,,2560306,2560306,0.9775
 INV-H2-000885,0,,2899515,2899515,0.6749
 INV-H2-000886,0,,2570948,2570948,0.6908
-INV-H2-000887,1,premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,2276845,1055620,0.6184
+INV-H2-000887,1,unknown_service,1055620,1055620,0.6098
 INV-H2-000888,0,,1641200,1641200,0.6746
 INV-H2-000889,1,daily_cap_exceeded,3817154,3971554,0.9524
 INV-H2-000890,0,,3470378,3470378,0.9662
 INV-H2-000891,0,,1422344,1422344,0.9812
-INV-H2-000892,1,cross_invoice_duplicate|unknown_service,2261630,2306705,0.6534
+INV-H2-000892,1,cross_invoice_duplicate|unknown_service,2261630,2306705,0.6465
 INV-H2-000893,0,,1334726,1334726,0.9425
 INV-H2-000894,0,,2300208,2300208,0.9557
 INV-H2-000895,0,,4939046,4939046,0.6899
@@ -1215,7 +1215,7 @@ INV-H3-000089,0,,4265609,4265609,0.9791
 INV-H3-000090,0,,1808731,1808731,0.9845
 INV-H3-000091,0,,3303970,3303970,0.9838
 INV-H3-000092,0,,925781,925781,0.9555
-INV-H3-000093,1,daily_cap_exceeded|line_total_arithmetic|premium_incorrectly_applied|unit_price_mismatch,5085581,6133006,0.6726
+INV-H3-000093,1,daily_cap_exceeded|line_total_arithmetic|unknown_service,5276581,6133006,0.6691
 INV-H3-000094,0,,2092468,2092468,0.9648
 INV-H3-000095,0,,2789037,2789037,0.9833
 INV-H3-000096,0,,4412053,4412053,0.9707
@@ -1247,7 +1247,7 @@ INV-H3-000122,0,,5179244,5179244,0.9806
 INV-H3-000123,0,,2039450,2039450,0.9851
 INV-H3-000124,0,,4141162,4141162,0.9853
 INV-H3-000125,0,,2340795,2340795,0.9824
-INV-H3-000126,1,premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,5535714,5640439,0.6793
+INV-H3-000126,1,unknown_service,5640439,5640439,0.6747
 INV-H3-000127,0,,5644242,5644242,0.6942
 INV-H3-000128,1,contract_number_mismatch,881729,881729,0.9865
 INV-H3-000129,0,,4240496,4240496,0.9764
@@ -1405,7 +1405,7 @@ INV-H3-000280,0,,1482837,1482837,0.9671
 INV-H3-000281,0,,2087514,2087514,0.9755
 INV-H3-000282,0,,1465854,1465854,0.9782
 INV-H3-000283,1,bundle_not_applied|premium_incorrectly_applied|unit_price_mismatch,3697860,4428835,0.9770
-INV-H3-000284,1,line_total_arithmetic|premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,4897290,4960090,0.6768
+INV-H3-000284,1,line_total_arithmetic|unknown_service|wrong_unit_basis,4985090,4960090,0.6737
 INV-H3-000285,0,,3738460,3738460,0.9734
 INV-H3-000286,0,,2583800,2583800,0.9714
 INV-H3-000287,0,,2856585,2856585,0.9773
@@ -1517,9 +1517,9 @@ INV-H3-000393,0,,1479500,1479500,0.9818
 INV-H3-000394,0,,1354133,1354133,0.9779
 INV-H3-000395,0,,4059927,4059927,0.9883
 INV-H3-000396,0,,4882503,4882503,0.9854
-INV-H3-000397,1,unit_price_mismatch|volume_discount_omitted,1045753,1053916,0.9755
+INV-H3-000397,0,,1053916,1053916,0.9755
 INV-H3-000398,0,,4307147,4307147,0.9731
-INV-H3-000399,1,unit_price_mismatch|volume_discount_omitted,2053489,2061652,0.9672
+INV-H3-000399,0,,2061652,2061652,0.9672
 INV-H3-000400,0,,2273634,2273634,0.9834
 INV-H3-000401,0,,2289619,2289619,0.9848
 INV-H3-000402,0,,1030376,1030376,0.9894
@@ -1683,7 +1683,7 @@ INV-H3-000561,0,,5976733,5976733,0.9791
 INV-H3-000562,0,,1326928,1326928,0.9867
 INV-H3-000563,0,,1630315,1630315,0.9876
 INV-H3-000564,0,,2089596,2089596,0.6754
-INV-H3-000565,1,daily_cap_exceeded|premium_incorrectly_applied|unit_price_mismatch|volume_discount_omitted|wrong_unit_basis,933802,1543378,0.9331
+INV-H3-000565,1,daily_cap_exceeded|premium_incorrectly_applied|unit_price_mismatch|unknown_service|volume_discount_omitted,1497352,1543378,0.6515
 INV-H3-000566,0,,2355847,2355847,0.6940
 INV-H3-000567,0,,4725194,4725194,0.9834
 INV-H3-000568,0,,3255149,3255149,0.9834
@@ -1737,7 +1737,7 @@ INV-H3-000615,0,,3651949,3651949,0.9769
 INV-H3-000616,0,,2455618,2455618,0.9695
 INV-H3-000617,0,,1986075,1986075,0.9456
 INV-H3-000618,0,,2526045,2526045,0.9790
-INV-H3-000619,1,cross_invoice_duplicate|daily_cap_exceeded|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,3230374,3116724,0.6844
+INV-H3-000619,1,cross_invoice_duplicate|daily_cap_exceeded|unknown_service,2958424,3116724,0.6807
 INV-H3-000620,0,,1673940,1673940,0.9596
 INV-H3-000621,0,,2670404,2670404,0.9850
 INV-H3-000622,0,,668775,668775,0.9317
@@ -1804,7 +1804,7 @@ INV-H3-000683,0,,4193370,4193370,0.9760
 INV-H3-000684,0,,3962076,3962076,0.9781
 INV-H3-000685,0,,2811475,2811475,0.9703
 INV-H3-000686,0,,1507477,1507477,0.9870
-INV-H3-000687,1,premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,4712361,4845729,0.6634
+INV-H3-000687,1,premium_incorrectly_applied|unit_price_mismatch|unknown_service,4513011,4845729,0.6480
 INV-H3-000688,0,,1626005,1626005,0.9825
 INV-H3-000689,0,,4240534,4240534,0.6833
 INV-H3-000690,0,,4065707,4065707,0.9871
@@ -1897,11 +1897,11 @@ INV-H3-000777,0,,6149897,6149897,0.9795
 INV-H3-000778,0,,2455565,2455565,0.9849
 INV-H3-000779,0,,1751701,1751701,0.9657
 INV-H3-000780,0,,2384030,2384030,0.9847
-INV-H3-000781,1,contract_number_mismatch|premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,2836100,2969025,0.6492
+INV-H3-000781,1,contract_number_mismatch|unknown_service|wrong_unit_basis,2969025,2969025,0.6453
 INV-H3-000782,1,service_date_after_invoice_date,4628823,4628823,0.9851
 INV-H3-000783,0,,2018521,2018521,0.9822
 INV-H3-000784,0,,3651635,3651635,0.9743
-INV-H3-000785,1,premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,2325851,2366751,0.6775
+INV-H3-000785,1,unknown_service,2366751,2366751,0.6736
 INV-H3-000786,0,,2554654,2554654,0.9862
 INV-H3-000787,1,service_date_after_invoice_date,4234549,4234549,0.9700
 INV-H3-000788,1,bundle_not_applied|unit_price_mismatch,3319912,3407112,0.9768
@@ -2180,7 +2180,7 @@ INV-H4-000121,1,service_date_after_invoice_date,1732875,1732875,0.9450
 INV-H4-000122,0,,2184175,2184175,0.9583
 INV-H4-000123,0,,3924125,3924125,0.9379
 INV-H4-000124,0,,5059925,5059925,0.6808
-INV-H4-000125,1,premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,2233150,2398750,0.6835
+INV-H4-000125,1,unknown_service,2398750,2398750,0.6804
 INV-H4-000126,0,,1198500,1198500,0.9894
 INV-H4-000127,0,,4277050,4277050,0.9845
 INV-H4-000128,0,,2878080,2878080,0.9865
@@ -2208,7 +2208,7 @@ INV-H4-000149,0,,1433525,1433525,0.9678
 INV-H4-000150,0,,1510135,1510135,0.9673
 INV-H4-000151,0,,4528550,4528550,0.9777
 INV-H4-000152,0,,1673314,1673314,0.9791
-INV-H4-000153,1,malformed_service_date|premium_incorrectly_applied|unit_price_mismatch|unknown_service|wrong_unit_basis,3621850,3656250,0.6521
+INV-H4-000153,1,malformed_service_date|unknown_service,3656250,3656250,0.6449
 INV-H4-000154,0,,1006400,1006400,0.9798
 INV-H4-000155,0,,1748312,1748312,0.9848
 INV-H4-000156,0,,1706925,1706925,0.9829
@@ -2846,7 +2846,7 @@ INV-H4-000791,0,,4221708,4221708,0.9760
 INV-H4-000792,0,,2301500,2301500,0.9730
 INV-H4-000793,0,,2204775,2204775,0.9626
 INV-H4-000794,0,,785665,785665,0.9695
-INV-H4-000795,1,duplicate_service|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,5645925,5008875,0.6664
+INV-H4-000795,1,premium_incorrectly_applied|unit_price_mismatch|unknown_service|volume_discount_incorrectly_applied,5083575,5008875,0.6638
 INV-H4-000796,0,,2077075,2077075,0.9723
 INV-H4-000797,0,,2429475,2429475,0.9842
 INV-H4-000798,0,,3689755,3689755,0.9814
@@ -2963,7 +2963,7 @@ INV-H5-000069,0,,2943997,2943997,0.9781
 INV-H5-000070,0,,3165698,3165698,0.6830
 INV-H5-000071,0,,1567731,1567731,0.9589
 INV-H5-000072,0,,993866,993866,0.9598
-INV-H5-000073,1,duplicate_service|invoice_total_mismatch|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|volume_discount_omitted,1586704,1718945,0.6730
+INV-H5-000073,1,invoice_total_mismatch|premium_incorrectly_applied|unit_price_mismatch|unknown_service|volume_discount_incorrectly_applied,1689586,1718945,0.6655
 INV-H5-000074,1,contract_number_mismatch|duplicate_invoice_id|invoice_total_mismatch|premium_incorrectly_applied|service_date_out_of_window|unit_price_mismatch|volume_discount_incorrectly_applied|volume_discount_omitted,6726440,3046447,0.9729
 INV-H5-000075,0,,3593629,3593629,0.9712
 INV-H5-000076,1,duplicate_invoice_id|invoice_total_mismatch|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|volume_discount_omitted,5682275,3061300,0.6918
@@ -3006,7 +3006,7 @@ INV-H5-000113,0,,1374270,1374270,0.6273
 INV-H5-000114,0,,1425235,1425235,0.9632
 INV-H5-000115,0,,1825298,1825298,0.9825
 INV-H5-000116,0,,5060906,5060906,0.9664
-INV-H5-000117,1,duplicate_service|malformed_service_date|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,3975488,3951859,0.6833
+INV-H5-000117,1,malformed_service_date|premium_incorrectly_applied|unit_price_mismatch|unknown_service|volume_discount_incorrectly_applied,4017288,3951859,0.6808
 INV-H5-000118,0,,2388510,2388510,0.9802
 INV-H5-000119,0,,1348026,1348026,0.9826
 INV-H5-000120,0,,4887416,4887416,0.9753
@@ -3098,7 +3098,7 @@ INV-H5-000205,0,,4549107,4549107,0.9611
 INV-H5-000206,0,,2432220,2432220,0.9466
 INV-H5-000207,0,,1690030,1690030,0.9671
 INV-H5-000208,0,,1467080,1467080,0.9502
-INV-H5-000209,1,contract_number_mismatch|premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied,3398511,2696117,0.6582
+INV-H5-000209,1,contract_number_mismatch|unknown_service,2696117,2696117,0.6495
 INV-H5-000210,0,,2003693,2003693,0.6548
 INV-H5-000211,0,,476248,476248,0.9787
 INV-H5-000212,0,,1700233,1700233,0.9843
@@ -3181,7 +3181,7 @@ INV-H5-000290,0,,2034423,2034423,0.9424
 INV-H5-000291,0,,2059007,2059007,0.9770
 INV-H5-000292,0,,764510,764510,0.9620
 INV-H5-000293,0,,4026843,4026843,0.9711
-INV-H5-000294,1,premium_incorrectly_applied|unit_price_mismatch|wrong_unit_basis,902439,928839,0.6269
+INV-H5-000294,1,unknown_service|wrong_unit_basis,928839,928839,0.6197
 INV-H5-000295,0,,3107443,3107443,0.6867
 INV-H5-000296,0,,4052077,4052077,0.6897
 INV-H5-000297,1,exclusion_window_violation,4405777,4565827,0.9809
@@ -3199,7 +3199,7 @@ INV-H5-000308,0,,907155,907155,0.9870
 INV-H5-000309,0,,1074118,1074118,0.9738
 INV-H5-000310,0,,700952,700952,0.9712
 INV-H5-000311,1,cross_invoice_duplicate|duplicate_invoice_id|invoice_total_mismatch|premium_incorrectly_applied|service_date_out_of_window|unit_price_mismatch|volume_discount_incorrectly_applied|volume_discount_omitted,6049148,3119824,0.6921
-INV-H5-000312,1,premium_incorrectly_applied|unit_price_mismatch|volume_discount_incorrectly_applied|wrong_unit_basis,4100293,4120545,0.6827
+INV-H5-000312,1,premium_incorrectly_applied|unit_price_mismatch|unknown_service,4094776,4120545,0.6805
 INV-H5-000313,0,,3839281,3839281,0.9551
 INV-H5-000314,0,,2037793,2037793,0.9683
 INV-H5-000315,0,,1174395,1174395,0.9673

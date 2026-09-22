@@ -324,6 +324,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(match.service_name, "Advanced Neurological Consultation")
         self.assertGreater(match.confidence, .7)
 
+    def test_weak_cross_specialty_match_abstains(self):
+        contract = parse_contract(ROOT / "data/contracts/hospital_1", "H1")
+        match = ServiceMatcher(contract).match("Extended Haem Anaes Admin")
+        self.assertIsNone(match.service_name)
+        self.assertEqual(match.uncertainty, "no_service_match")
+
     def test_hospital_3_amendment(self):
         contract = parse_contract(ROOT / "data/contracts/hospital_3", "H3")
         service = next(s for s in contract["services"] if s["name"] == "Assisted Urologic Endoscopic Procedure")
